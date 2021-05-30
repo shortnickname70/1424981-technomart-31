@@ -1,0 +1,258 @@
+/* Variables */
+
+:root {
+    --Basic-background:  #F1F5F7;
+     --basic-white: #ffffff;
+     --basic-black:#000000;
+     --basic-red: #EE3643;
+     --green-:#63A63E;
+     --extra-dark-blue:#293449;
+     --dark-blue:#32425C;
+     --Special-yellow: #FFBF47   ;
+     --light-blue:#3BBCE3  ;
+     --violet:#DC91D8;
+     --light-green: #8ED78F   ;
+     --light-grey: #A9A9A9 ;
+     --antracit :#32425C    ;
+     --social-network-background:#212A3A    ;
+    --light-orange-for-headers-in-footer:#FFD180;
+    
+    }
+    body {
+      margin: 0;
+        padding: 0;
+
+        font-family: PT Sans, Cuprum, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 24px;
+        color: var(--basic-white);
+        text-transform: capitalize;
+        background-color: var(--basic-white);
+        background-repeat: no-repeat;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .main-header {
+        background-color:#F1F5F7;
+      }
+      .highest-panel {background-color: #293449;
+        font-size: 18px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+      }
+      .checkout {background-color: #63A63E; }
+
+      .header-article {
+        font-style: italic;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        color: #EE3643;
+      }
+      .header-phone-number {
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 30px; 
+        display: flex;
+        align-items: center;        
+        color: #EE3643;
+      }
+      .header-address {
+        font-size: 14px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;        
+        color: #32425C;
+      }
+      .header-person-blocks {
+        font-size: 21px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;        
+        color: #000000;
+      }
+      .header-navigation {
+        background: #32425C;
+      }
+      .header-navigation-element{
+        font-size: 18px;
+        line-height: 24px;       
+        display: flex;
+        align-items: center;        
+        color: #FFFFFF;
+      }
+
+      .catalog-divide {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;        
+        color: #FFFFFF;
+      }
+      .materials {background-color: #FFBF47;}
+      .instrument {background-color: #3BBCE3;}
+     .techniks{background-color:#DC91D8 ;}
+     .sales {background-color: #8ED78F;}
+      .delivery-divide{background-color:#FFBF47 ;}
+
+.catalog-divide-button {
+background: #FFFFFF;
+mix-blend-mode: normal;
+opacity: 0.3;
+font-size: 14px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+}
+.catalog-divide-perf {
+font-weight: bold;
+font-size: 36px;
+line-height: 36px;
+display: flex;
+align-items: center;
+text-transform: uppercase;
+}
+
+.red-button{
+    font-size: 14px;
+    line-height: 18px;  
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;    
+    color: #FFFFFF;
+    background-color: var(--basic-red);
+}
+
+.heading {
+    font-size: 30px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;    
+    color: #32425C;
+}
+
+.popular-sales,.popular-manufacturer {
+    background-color: #F9F5F0;
+}
+
+.products {
+background: #FFFFFF;
+border: 1px solid #EAEAEA;
+box-sizing: border-box;
+font-weight: bold;
+font-size: 18px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+
+.old-price {
+font-weight: bold;
+font-size: 17px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+text-decoration-line: line-through;
+text-transform: uppercase;
+color: #A9A9A9;
+}
+
+.catalog-button {
+background-color: #EE3643;
+font-weight: bold;
+font-size: 17px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.popular-manufacturer ul li {
+position: absolute;
+width: 220px;
+height: 145px;
+background: #FFFFFF;
+border: 1px solid #EAEAEA;
+box-sizing: border-box;
+}
+
+.text-information{
+    font-size: 13px;
+    line-height: 24px;   
+    color: #000000;    
+}
+.Services {
+    background-color: #F1F5F7;
+
+}
+option {font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;    
+    color: #32425C;
+    }
+
+.delivery-company li {
+font-size: 18px;
+line-height: 24px;
+color: #000000;
+    }
+
+.main-footer {background: #32425C;}
+
+.footer-features {
+    background: #293449;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;    
+    color: #FFFFFF;
+}
+
+.footer-navigation {
+    font-size: 18px;
+    line-height: 24px;
+   color: #F1F5F7;
+}
+.footer-address {
+font-size: 18px;
+line-height: 24px;
+display: flex;
+align-items: center;
+color: #F3F7F9;
+}
+
+.footer-catalog-navigation {
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;    
+    color: #FFD180;
+}
+.social-button {background: #212A3A;}
+
+
