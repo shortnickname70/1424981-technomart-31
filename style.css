@@ -168,6 +168,10 @@ align-items: center;
 text-align: center;
 color: #000000;
 }
+.products:hover {
+  border: 1px solid #EAEAEA;
+  box-sizing: border-box;
+}
 
 .old-price {
 font-weight: bold;
@@ -257,7 +261,7 @@ color: #F3F7F9;
 }
 .social-button {background: #212A3A;}
 
-.personality {
+.personal {
 font-size: 16px;
 line-height: 18px;
 display: flex;
@@ -294,7 +298,7 @@ color: #000000;
 background: #F7F3EC;
 }
 
-#bosch,#interscol,#makita,#dewalt,#hitachi, #filter-rechargeable, #filter-mains-supply {
+#bosch,#interscol,#hitachi,#dewalt,#makita,#filter-rechargeable, #filter-mains-supply {
 font-size: 15px;
 line-height: 19px;
 text-transform: uppercase;
