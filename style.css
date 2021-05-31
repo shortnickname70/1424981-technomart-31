@@ -16,6 +16,8 @@
      --antracit :#32425C    ;
      --social-network-background:#212A3A    ;
     --light-orange-for-headers-in-footer:#FFD180;
+    --light-orange-catalog:#F7F3EC;
+    --beige: #E5E5E5;
     
     }
     body {
@@ -255,4 +257,50 @@ color: #F3F7F9;
 }
 .social-button {background: #212A3A;}
 
+.personality {
+font-size: 16px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #32425C;
+}
+.bread-crumbs {
+font-size: 13px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;  
+  color: #000000;
+}
 
+.filter {
+font-size: 13px;
+line-height: 18px;
+display: flex;
+align-items: center;
+color: #000000;
+text-transform: uppercase;  
+background: #F7F3EC;
+}
+
+.price-dot {font-size: 17px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+background: #F7F3EC;
+}
+
+#bosch,#interscol,#makita,#dewalt,#hitachi, #filter-rechargeable, #filter-mains-supply {
+font-size: 15px;
+line-height: 19px;
+text-transform: uppercase;
+color: #000000;
+}
+
+.perforators-information {
+  background: #F1F5F7;
+}
