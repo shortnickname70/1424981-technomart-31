@@ -14,21 +14,27 @@
 	  </head>
 	  <body class = "page-body">
 	    <header class="main-header">
+			<div class = "highest-panel-grid">
 	      <section class= "highest-panel">
-	      <a>
-	        <img src="img/index-logo.svg" width="220" height="47" alt="Логотип магазина Техномарт">
+		   <a>
+	        <img src="img/index-logo.svg" width="220" height="47" alt="Логотип магазина Техномарт" class="highest-panel-logo">
 	      </a>
 	      <form action="https://echo.htmlacademy.ru/" method="get">
 	        <input type="text" name="search" id = "search-field">
 	        <label>Поиск</label>
 	              </form>
-	      <a href="blank.html" class = "header-link">Закладки</a>
-	      <a href="blank.html" class ="header-link">Корзина</a>
+				  <ul class = "person-fields">
+	     <li> <a href="blank.html" class = "header-link">Закладки</a> </li>
+	     <li>  <a href="blank.html" class ="header-link">Корзина</a></li>
+		</ul>
 	      <button type="button" class = "checkout">Оформить заказ</button>
+
 	      </section>
-	      <br>
+		</div>
+	      <br> 
+		  <div class = "header-grid">
 	      <article class = "header-article">
-	        <br>
+		   <br>
 	        Интернет-магазин
 	        <br>
 	        строительных материалов
@@ -42,6 +48,8 @@
 	      </article>
 	      <a href="blank.html" class = "header-person-blocks">Войти</a>
 	      <a href="blank.html" class = "header-person-blocks">Регистрация</a>
+		</div>
+		<div class = "header-navigation-grid">
 	      <nav class = "header-navigation">
 	        <ul>
 	        <li><a href="blank.html" class = "header-navigation-element">Главная</a></li>
@@ -53,9 +61,12 @@
 	        <li><a href="blank.html" class = "header-navigation-element">Контакты</a></li>
 	        </ul>
 	      </nav>
+		</div>
 	    </header>
-	  <main>
+	  <main class="container">
+		  <div class = "main-grid">
 	    <h1>ТЕХНОМАРТ</h1>
+		<div class="features-grid">
 	    <section class = "catalog-divide materials">
 	      Материалы
 	      <a href="catalog.html" class = "catalog-divide-button">На любой вкус</a> 
@@ -83,7 +94,9 @@
 	      Доставка
 	          <a href="blank.html" class = "catalog-divide-button">Бесплатно</a> 
 	     </section>
+		</div>
 	      <br>
+		  <div class="popular-sales-grid">
 	    <section class = "popular-sales heading">
 	        ПОПУЛЯРНЫЕ ТОВАРЫ
 	            <a href="catalog.html" class = "red-button">Все популярные товары:</a>  
@@ -127,8 +140,10 @@
 	</li>
 	              
 	 </ul>
+	</div>
+	<div class="popular-manufacturer-grid">
 	 <section class = "popular-manufacturer heading">
-	  ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ
+	 ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ
 	      <a href="blank.html" class = "red-button">Все производители:</a>  
 	</section>
 	<ul>
@@ -157,7 +172,7 @@
 	        alt="Логотип Metabo"> 
 	    </li>
 	</ul>
-	
+</div>
 	<section class = "Services"> <h2 class="heading"> СЕРВИСЫ</h2>
 	  <br>
 	  <p class = "text-information"> Хороший интернет-магазин отличается от плохого не только ценами! 
@@ -176,7 +191,7 @@
 	  поднимая его на ваш этаж! </p>
 	  <img src="img/delivery-truck.png" width="468" height="261" alt="Карта" >
 	</section>
-	
+	<div class="about-company-grid">
 	<section class = "about-company"> <h3 class="heading">КОМПАНИЯ «Техномарт»</h3>
 	<br>
 	<p class = "text-information">
@@ -208,8 +223,10 @@
 	  <img src="img/map.jpg" width="300" height="158" alt="Карта" >
 	  <button type="button" class = "red-button">Заблудились? Напишите нам!</button>
 	  </section>
+	</div>
 	</main>
-	    <footer class = "main-footer">
+	    <footer class = "main-footer ">
+			<div class="container">
 	      <a>
 	        <img src="img/index-logo.svg" width="220" height="68" alt="Логотип магазина Техномарт">
 	      </a>
@@ -265,6 +282,7 @@
 	              <br>
 	              <a href = "htmlacademy.ru" class="footer-text">htmlacademy.ru</a>
 	             </article>
+			</div>
 	    </footer>
 	  </body>
 	</html>

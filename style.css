@@ -33,8 +33,14 @@
         text-transform: capitalize;
         background-color: var(--basic-white);
         background-repeat: no-repeat;
+        min-height: 100%;
+        display: grid;
+        grid-template-rows: min-content 1fr min-content;
+        align-content: start;
       }
-
+.page {
+  height:100%;
+}
       a {
         text-decoration: none;
       }
@@ -45,13 +51,46 @@
       }
       .main-header {
         background-color:#F1F5F7;
+        display: grid;
+        grid-template-rows: min-content 1fr min-content;
+        align-content: start;
+
       }
+      .highest-panel-logo {
+        display: grid;
+        Width: 220px;
+        Height: 47px;
+      }
+
       .highest-panel {background-color: #293449;
         font-size: 18px;
         line-height: 24px;
         display: flex;
         align-items: center;
+      
       }
+      #search-field {
+        display: grid;
+
+      }
+      .person-fields {
+        display: grid;
+      }
+     .highest-panel-grid{ 
+      display: grid;
+      background-color: #293449;
+      grid-template-columns: 220px 1fr 50%;
+      width: 1200px;
+      height: 42px;
+      margin: 0 auto;
+      padding: 0 10px;
+  
+
+     }  
+     .header-grid {
+       display: grid;
+
+     }
       .checkout {background-color: #63A63E; }
 
       .header-article {
@@ -89,13 +128,38 @@
       }
       .header-navigation {
         background: #32425C;
+        margin: 0;
+        padding: 0;
       }
+      .header-navigation-grid {
+       display: grid;
+      }
+
       .header-navigation-element{
         font-size: 18px;
         line-height: 24px;       
         display: flex;
         align-items: center;        
         color: #FFFFFF;
+      }
+      .main-grid{
+      display: grid;
+      grid-template-rows: min-content min-content 522px min-content;
+      align-content:start;
+      }
+    .features-grid { 
+      display: grid;
+      padding-top: 59px;
+      padding-bottom: 59px;
+      }
+      .popular-sales-grid {
+        display: grid;
+        padding-bottom: 70px;
+      }
+
+      .popular-manufacturer-grid {
+     display: grid;
+     padding-bottom: 70px;
       }
 
       .catalog-divide {
@@ -111,6 +175,12 @@
      .techniks{background-color:#DC91D8 ;}
      .sales {background-color: #8ED78F;}
       .delivery-divide{background-color:#FFBF47 ;}
+
+  .container {
+        width: 940px;
+        margin: 0 auto;
+        padding: 0 10px;
+      }
 
 .catalog-divide-button {
 background: #FFFFFF;
@@ -212,8 +282,10 @@ box-sizing: border-box;
 }
 .Services {
     background-color: #F1F5F7;
-
+    display: grid;
+    padding: 0px;
 }
+
 option {font-weight: bold;
     font-size: 21px;
     line-height: 30px;
@@ -228,7 +300,15 @@ line-height: 24px;
 color: #000000;
     }
 
-.main-footer {background: #32425C;}
+.main-footer {
+  background: #32425C;
+  display: grid;
+  grid-template-rows: 68px 1fr 107px;
+  align-content: start;
+  Width: 1200px;
+  
+
+}
 
 .footer-features {
     background: #293449;
@@ -238,7 +318,20 @@ color: #000000;
     align-items: center;    
     color: #FFFFFF;
 }
+.footer-nav-grid {
+  display: grid;
+  width: 1200px;
+}
+.footer-address-grid {
+  display: grid;
+  width: 1200px;
 
+}
+
+.footer-bottom-grid {
+  display: grid;
+  width: 1200px;
+}
 .footer-navigation {
     font-size: 18px;
     line-height: 24px;
