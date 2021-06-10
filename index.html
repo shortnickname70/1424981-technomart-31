@@ -9,6 +9,7 @@
 	    <link rel="apple-touch-icon" href="favicon/180.png">
 	    <link rel="manifest" href="manifest.webmanifest">
 	    <link rel="stylesheet" href="https://fonts.google.com/specimen/Cuprum?query=cuprum">
+		<link rel="stylesheet" href="https://fonts.google.com/specimen/PT+Sans?query=PT+Sans">
 	    <link href="normalize.css" rel="stylesheet">
 	  <link href="style.css" rel="stylesheet">
 	  </head>
@@ -67,40 +68,40 @@
 		  <div class = "main-grid">
 	    <h1>ТЕХНОМАРТ</h1>
 		<div class="features-grid">
-	    <section class = "catalog-divide materials">
+	    <div class = "catalog-divide materials">
 	      Материалы
-	      <a href="catalog.html" class = "catalog-divide-button">На любой вкус</a> 
-	    </section>
-	    <section class = "catalog-divide instrument">
+	      <button type="button" class = "catalog-divide-button">На любой вкус</button> 
+		</div>
+	    <div class = "catalog-divide instrument">
 	      Инструмент
-	      <a href="catalog.html" class = "catalog-divide-button">На все случаи жизни</a> 
-	    </section>
-	    <section class = "catalog-divide techniks">
+	      <button type="button" class = "catalog-divide-button">На все случаи жизни</button>  
+	    </div>
+	    <div class = "catalog-divide techniks">
 	      Техника
-	        <a href="catalog.html" class = "catalog-divide-button">Для стройки</a>
-	    </section> 
-	    <section class = "catalog-divide-perf">
+		  <button type="button" class = "catalog-divide-button">Для стройки</button> 
+	    </div> 
+	    <div class = "catalog-divide-perf">
 	      <img src="img/men-with-a-perforator.jpg" width="620" height="266" alt="Мужчина с перфоратором">
 	      Перфораторы
 	      <br>
 	      Настоящие мужские игрушки
-	        <a href="catalog.html" class = "red-button">Открыть каталог</a>
-	    </section> 
-	    <section class = "catalog-divide sales" >
+		  <button type="button" class = "red-button">Открыть каталог</button> 
+	    </div> 
+	    <div class = "catalog-divide sales" >
 	      Скидки 50%
-	          <a href="catalog.html" class = "catalog-divide-button">На 350 товаров</a> 
-	     </section>
-	     <section class = "catalog-divide delivery-divide">
+		  <button type="button" class = "catalog-divide-button">На 350 товаров</button> 
+	     </div>
+	     <div class = "catalog-divide delivery-divide">
 	      Доставка
-	          <a href="blank.html" class = "catalog-divide-button">Бесплатно</a> 
-	     </section>
+		  <button type="button" class = "catalog-divide-button">Бесплатно</button> 
+	     </div>
 		</div>
 	      <br>
 		  <div class="popular-sales-grid">
-	    <section class = "popular-sales heading">
+	    <div class = "popular-sales heading">
 	        ПОПУЛЯРНЫЕ ТОВАРЫ
-	            <a href="catalog.html" class = "red-button">Все популярные товары:</a>  
-	    </section>
+	            <button type="button" class = "red-button">Все популярные товары:</button>  
+		</div>
 	 <ul>
 	  
 	<li class= "products"> <a href = "product-1.html"> 
@@ -144,7 +145,7 @@
 	<div class="popular-manufacturer-grid">
 	 <section class = "popular-manufacturer heading">
 	 ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ
-	      <a href="blank.html" class = "red-button">Все производители:</a>  
+	      <button type="button" class = "red-button">Все производители:</button>  
 	</section>
 	<ul>
 	  <li><img src="img/logo-bosch.jpg" width="126" height="37" 
@@ -173,7 +174,7 @@
 	    </li>
 	</ul>
 </div>
-	<section class = "Services"> <h2 class="heading"> СЕРВИСЫ</h2>
+	<section class = "services"> <h2 class="heading"> СЕРВИСЫ</h2>
 	  <br>
 	  <p class = "text-information"> Хороший интернет-магазин отличается от плохого не только ценами! 
 	   </p>
@@ -210,7 +211,7 @@
 	    <li>ЖелДорЭкспедиция
 	    </li>
 	</ul>
-	<a href="blank.html" class = "red-button">Подробнее о компании</a>
+	<button type="button" class = "red-button">Подробнее о компании</button>
 	</section>
 	
 	<section class= "contacts"> <h4 class="heading">Контакты </h4>
@@ -227,9 +228,12 @@
 	</main>
 	    <footer class = "main-footer ">
 			<div class="container">
+				<div class="footer-logo-and-navigation-row">
 	      <a>
-	        <img src="img/index-logo.svg" width="220" height="68" alt="Логотип магазина Техномарт">
+	        <img src="img/index-logo.svg" width="220" height="68" alt=
+			"Логотип магазина Техномарт" class="logo-footer">
 	      </a>
+		  <div class="navigation-footer">
 	      <nav>
 	        <ul >
 	        <li class="footer-navigation"><a href="blank.html">Компания</a></li>
@@ -239,6 +243,8 @@
 	        <li class="footer-navigation"><a href="blank.html">Контакты</a></li>
 	        </ul>
 	      </nav>
+		</div>
+		</div>
 	      <br>
 	      <article class="footer-address"> г. Санкт-Петербург, наб. Реки Карповки, 5 лит П +7 800 555-86-28
 	      </article>
@@ -251,11 +257,12 @@
 	        </ul>
 	         </nav>
 	         <br>
-	         <article class="footer-features">
+			 <div class="footer-features">
+	         <article class="footer-copyright">
 	           <p class="footer-text">© 2010–2021 Компания «Техномарт»</p>
 	           <p class="footer-text">Все права защищены</p>
 	          </article>
-	          <section class="footer-socials footer-features"> 
+	          <div class="footer-socials"> 
 	            <h6>Социальные сети</h6>
 	              <ul>
 	                <li>
@@ -271,17 +278,18 @@
 	                    height="21" alt="Значок инстаграма"></a>
 	                </li>
 	                 </ul>
-	            </section>
-	            <article class="footer-features">
+					</div>
+	            <article class="footer-feedback">
 	              <p class="footer-text">Обратная связь:</p>
 	              <br>
 	              <p  class="footer-text">mail@htmlacademy.ru</p>
 	             </article>
-	             <article class="footer-features">
-	              <p class="footer-text">Разработано:</p>
+	             <article class="footer-made-by">
+	              <p class="footer-text">Разработано — </p>
 	              <br>
 	              <a href = "htmlacademy.ru" class="footer-text">htmlacademy.ru</a>
 	             </article>
+				</div>
 			</div>
 	    </footer>
 	  </body>

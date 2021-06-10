@@ -24,7 +24,7 @@
       margin: 0;
         padding: 0;
 
-        font-family: PT Sans, Cuprum, sans-serif;
+        font-family: Cuprum, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 13px;
@@ -54,6 +54,8 @@
         display: grid;
         grid-template-rows: min-content 1fr min-content;
         align-content: start;
+        margin-bottom: 59px;
+        
       }
 
       .main-catalog-grid{
@@ -66,6 +68,7 @@
         display: grid;
         Width: 220px;
         Height: 47px;
+        padding-bottom: 46px;
       }
 
       .highest-panel {background-color: #293449;
@@ -95,7 +98,7 @@
      }  
      .header-grid {
        display: grid;
-
+height: 320px;
      }
       .checkout {background-color: #63A63E; }
 
@@ -107,14 +110,20 @@
         display: flex;
         align-items: center;
         color: #EE3643;
+        padding: 0;
       }
       .header-phone-number {
+        max-width: 270px;
+        max-height: 45px;
         font-weight: bold;
         font-size: 21px;
         line-height: 30px; 
         display: flex;
         align-items: center;        
         color: #EE3643;
+        border: 3px solid #FFFFFF;
+        background: #F3F7F9;
+        padding: 7px 50px 8px 74px;
       }
       .header-address {
         font-size: 14px;
@@ -131,7 +140,13 @@
         align-items: center;
         text-align: center;        
         color: #000000;
+        background: rgba(0, 0, 0, 0.0001);
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 24px;
+        padding-left: 24px;
       }
+
       .header-navigation {
         background: #32425C;
         margin: 0;
@@ -139,7 +154,17 @@
       }
       .header-navigation-grid {
        display: grid;
+       padding-bottom: 60px;
+       padding-top: 40px;
+       max-width: 940px;
       }
+    .header-link{
+      padding-left: 50px;
+      }
+    div .header-person-blocks:nth-child(1) { 
+     padding-left: 45px;
+     padding-right: 27x;
+    }
 
       .header-navigation-element{
         font-size: 18px;
@@ -175,12 +200,55 @@
          grid-template-columns: 220px 1fr 
          padding-left:20px;
     }
+/* grid feutures */
 
     .features-grid { 
       display: grid;
+      grid-template-columns:  300px 300px 300px ; 
+      grid-template-rows:  123px 123px 123px ;
       padding-top: 59px;
       padding-bottom: 59px;
+      width:940px;
+      height:247px;
+      gap: 20px;
       }
+
+  .materials {
+    background-color: #FFBF47;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+      .instrument {
+        background-color: #3BBCE3;
+        grid-row:  1/2;
+        grid-column: 2/3;
+      }
+     .techniks{
+       background-color:#DC91D8 ;
+       grid-row: 1/2 ;
+       grid-column: 3/4;
+      
+    }
+     .sales {
+       background-color: #8ED78F;
+       grid-row: 2/3 ;
+       grid-column: 3/4;
+      }
+      .delivery-divide{
+        background-color:#FFBF47 ;
+        grid-row: 3/4 ;
+        grid-column: 3/4;
+      }
+      .catalog-divide-perf{
+        grid-row: 2/4 ;
+        grid-column: 1/3;
+      }
+      
+      /* grid feutures end */
+
+
+
+
       .popular-sales-grid {
         display: grid;
         padding-bottom: 70px;
@@ -196,15 +264,14 @@
         font-size: 24px;
         line-height: 30px;
         display: flex;
-        align-items: center;        
+        align-items: center; 
+        justify-content:flex-start;        
         color: #FFFFFF;
-      }
-      .materials {background-color: #FFBF47;}
-      .instrument {background-color: #3BBCE3;}
-     .techniks{background-color:#DC91D8 ;}
-     .sales {background-color: #8ED78F;}
-      .delivery-divide{background-color:#FFBF47 ;}
+        padding-left:23px;
+        padding-top: 20px;
 
+      }
+    
   .container {
         width: 940px;
         margin: 0 auto;
@@ -217,10 +284,15 @@ mix-blend-mode: normal;
 opacity: 0.3;
 font-size: 14px;
 line-height: 18px;
+Width: 135px;
+Height: 38px;
 display: flex;
 align-items: center;
 text-align: center;
 text-transform: uppercase;
+margin-bottom: 21px;
+margin-right: 142px;
+margin-top: 64px;
 }
 .catalog-divide-perf {
 font-weight: bold;
@@ -253,7 +325,11 @@ text-transform: uppercase;
 
 .popular-sales,.popular-manufacturer {
     background-color: #F9F5F0;
-}
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 14px;
+    padding-left: 28px;
 
 .products {
 background: #FFFFFF;
@@ -305,14 +381,19 @@ box-sizing: border-box;
 }
 
 .text-information{
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
     font-size: 13px;
     line-height: 24px;   
     color: #000000;    
+
 }
-.Services {
+.services {
     background-color: #F1F5F7;
     display: grid;
     padding: 0px;
+
 }
 
 option {font-weight: bold;
@@ -342,28 +423,49 @@ color: #000000;
     font-size: 16px;
     line-height: 18px;
     display: flex;
-    align-items: center;    
+    align-items: center;  
+    justify-content: flex-start;  
     color: #FFFFFF;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-right: 143px;
+    padding-left: 131px;
+    width:1200px;
+    height:107px;
 }
-.footer-nav-grid {
-  display: grid;
-  width: 1200px;
+.footer-copyright{
+  max-width: 226px;
+  max-height: 37px;
+  padding:0;
+  margin-right: 162px;
 }
-.footer-address-grid {
-  display: grid;
-  width: 1200px;
+.footer-socials {
+  width: 134px;
+  height: 44px;
+  margin-right: 118px;
 
 }
+.social-button {
+  margin:1px;
+}
+.footer-feedback {
+  width: 137px;
+  height: 37px;
+  margin-right: 51px;
+}
 
-.footer-bottom-grid {
-  display: grid;
-  width: 1200px;
+.footer-feedback .footer-text:nth-child(2) {
+color:#FFD180;
 }
-.footer-navigation {
-    font-size: 18px;
-    line-height: 24px;
-   color: #F1F5F7;
+.footer-made-by .footer-text:nth-child(2) {
+color:#FFD180;
 }
+
+.footer-made-by {
+  width: 98px;
+  height: 37px;
+}
+
 .footer-address {
 font-size: 18px;
 line-height: 24px;
