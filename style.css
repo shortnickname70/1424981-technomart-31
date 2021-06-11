@@ -163,7 +163,7 @@ height: 320px;
     }
   div .header-person-blocks:nth-child(1) { 
    padding-left: 45px;
-   padding-right: 27x;
+   padding-right: 27px;
   }
 
     .header-navigation-element{
@@ -205,8 +205,7 @@ height: 320px;
     align-items: center;
     text-align: center;
     width: 940px;
-    min-height: ;
-
+   
   }
   .main-catalog-list-products {
 width: 220px;
@@ -250,8 +249,7 @@ text-decoration-line: line-through;
 text-transform: uppercase;
 color: #A9A9A9;
 
-
-  }
+}
 
 .main-catalog-button{
   font-family: PT Sans;
@@ -298,8 +296,8 @@ color: #A9A9A9;
 
   .catalog-grid-row{
     display: grid;
-       grid-template-columns: 220px 1fr 
-       padding-left:20px;
+       grid-template-columns: 220px 1fr; 
+       row-gap: 20px;
      
   }
 
@@ -453,8 +451,8 @@ width: 220px;
 min-height: 318px;
 margin-right: 20px;
 margin-bottom: 18px;
-
 }
+
 .products:nth-child(3n) {
 margin-right: 0;
 }
@@ -682,6 +680,7 @@ width: 1200px;
 .products-image {
 margin: 29px 53px 38px 40px;
 }
+
 .BFG-6000 {
 margin: 22px 43px 28px 33px;
 }
