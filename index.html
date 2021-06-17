@@ -273,7 +273,6 @@
 		   <p class="footer-text">Все права защищены</p>
 		  </article>
 		  <div class="footer-socials"> 
-			<h6>Социальные сети</h6>
 			  <ul>
 				<li>
 				  <a href="#" class="social-button"><img src="img/icon-VK.png" 
@@ -302,5 +301,34 @@
 			</div>
 		</div>
 	</footer>
+	<section class="modal">
+		<div class="feedback-area">
+		<h6>Форма обратной связи</h6>
+		<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+			<img src="img/icon-red-cross.svg" width="21" height="1" alt="Иконка красного крестика" class="icon-red-cross">
+			
+		  <p>
+			<label for="login-name">Ваше имя</label>
+			<input class="login-name-icon" id="name-field" type="text" name="name" placeholder="Имя Фамилия">
+		  </p>
+
+		  <p>
+			<label for="login-password">Ваш e-mail:</label>
+			<input class="login-email-icon" id="email-field" type="email" name="email" placeholder="email@example.com">
+		  </p>
+
+		  <p>
+			<label for="feedback-user-text">Текст письма:</label>
+			<textarea class="feedback-text-field-icon" id="feedback-text-field" type="text" name="feedback-text" 
+			placeholder="В свободной форме"	cols="62" rows="5"></textarea>> </textarea>
+		  </p>
+
+		</div>
+		  <div class="feedback-button-area">
+		  <button class="feedback-button" type="submit">Отправить</button>
+		  </div>
+		</form>
+		</section>
+
   </body>
 </html>
