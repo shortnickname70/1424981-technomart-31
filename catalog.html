@@ -16,7 +16,7 @@
 			<div class = "highest-panel-grid">
 	      <section class= "highest-panel">
 		   <a>
-	        <img src="img/index-logo.svg" width="220" height="47" alt="Логотип магазина Техномарт" class="highest-panel-logo">
+	        <img src="img/main-logo.svg" width="220" height="47" alt="Логотип магазина Техномарт" class="highest-panel-logo">
 	      </a>
 	      <form action="https://echo.htmlacademy.ru/" method="get">
 	        <input type="text" name="search" id = "search-field">
@@ -45,7 +45,7 @@
 	      <article class  ="header-address"> 
 	        г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
 	      </article>
-        <section class = "header-person-blocks>
+        <section class = "header-person-blocks">
           Равшан Джамшутович
           <a href="blank.html" class="personal">Мои заказы</a>
           <a href="blank.html" class="personal">Личный кабинет</a>
@@ -100,12 +100,30 @@
 <div class="filter-grid-column"> 
     <p>Цена:</p>
     <div class="price-slider filter">
-      <div class = "price-slider-whole-line">
-        <div class = "price-slider-selected-segment">
-          <span class="price-dot min-price-dot">0</span>
-          <span class="price-dot max-price-dot">300000</span>
-        </div>
-    </div>
+
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="filter-item">
+            <legend>Цена:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width: 85%; margin-left: 0">
+                  </div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 0" ></div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 85%" ></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  — <input type="number" name="max-price" value="30000">
+                </label>
+               </div>
+          </div>
+        </fieldset>
+        </form>
 </div>
 <section>
     <form method="get" action="https://echo.htmlacademy.ru">
@@ -333,15 +351,10 @@
       </div>
           
           <div class="product-in-cart-button">  
-              <ul class="product-in-cart-options">
-                  <li><a href="">Оформить заказ</a></li>
-                  <li><a href="">Продолжить покупку</a></li>
-              </ul>
-          </div>  
-      <button class="close-button" type="button" >
-          <span class="visually-hidden">Закрыть</span>
-      </button>
-      </section>
+                  <button class="buy-button" type="button" >Оформить заказ</button>
+                  <button class="continue-buy-button" type="button" >Продолжить покупку</button>
+          </div> 
+       </section>
   
 	  </body>
 	</html>
