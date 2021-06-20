@@ -18,6 +18,7 @@
   --light-orange-for-headers-in-footer: #FFD180;
   --light-orange-catalog: #F7F3EC;
   --beige: #E5E5E5;
+  --linear-gradient(0deg, #212A3A, #212A3A);
 
 }
 
@@ -848,16 +849,17 @@ padding-bottom: 12px;
 .delivery-company li:last-child {
   padding-bottom: 6px;
   }
+  .get-lost{
+    width: 300px;
+  }
 
 
 .main-footer {
-  background: #32425C;
- 
   
 }
 
-.footer-features {
-  background: #293449;
+.footer-first-section {
+ 
   font-size: 16px;
   line-height: 18px;
   display: flex;
@@ -866,29 +868,77 @@ padding-bottom: 12px;
   color: #FFFFFF;
   
 }
+.footer-first-section-background {
+  background-color: #32425C;
+  opacity: 0.95;
+}
+.footer-second-section-background {
+  background-color:#293449;
+}
+.footer-second-section {
+ 
+  display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-content: center;
+    box-sizing: border-box;
+    margin: 0 0;
+}
 
 .footer-copyright {
-  max-width: 226px;
-  max-height: 37px;
-  padding: 0;
-  margin-right: 162px;
+max-width: 226px;
+padding: 0;
+margin-right: 162px;
+font-family: Cuprum;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 18px;
+color: #FFFFFF;
 }
 
 .footer-socials {
- 
+ list-style: none;
+ display: flex;
+ justify-content: space-between;
+ align-content: center;
+ align-items: center;
+ max-width: 134px;
+ margin: 0;
+ padding:0 ;
 }
 
 .social-button {
-  margin: 1px;
+  width: 44px;
+  height: 44px;
+  background-color: linear-gradient(0deg, #212A3A, #212A3A);
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right:1px;
 }
 
+.footer-text-copyright{
+margin-top: 35px;
+margin-bottom: 35px;
+  }
 
 .footer-feedback {
+  color: white;
+  margin-top: 35px;
  
 }
 
 .footer-made-by {
-  
+  color: white;
+  margin-top: 35px;
+  margin-right: 13px;
+}
+.footer-text {
+  margin: 0;
+  padding:0 ;
 }
 
 .footer-feedback .footer-text:nth-child(2) {
