@@ -144,7 +144,7 @@ h1 {display: none;
 }
 
 .highest-panel-search-field svg {
-  left: -17px;
+  left: 17px;
   top: 12px;
   position: absolute;
   background-color: transparent;
@@ -155,19 +155,23 @@ h1 {display: none;
   opacity: 0.3;
   position: absolute;
   background-color: transparent;
+  left:796px;
 
 }
 
 .search-label {
   position: absolute;
-  left: 10px;
+  left: 42px;
   right: 100px;
   top: 9px;
   color: white;
   background-color: #293449;
 
 }
-
+.basket {
+  margin-left:73px;
+  margin-right:26px ;
+}
 
 .person-fields {
   display: flex;
@@ -346,28 +350,32 @@ div .header-person-blocks:nth-child(1) {
 
 .main-catalog-list-products {
   width: 220px;
-  min-height: 318px;
+  height: 318px;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
   box-sizing: border-box;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
 }
 
-.main-catalog-list-products::before {
+.main-catalog-list-products:nth-child(even)::before {
   content: "";
-  background-image: url("img/red-tape.jpg");
+  background-image: url("img/red-tape-new.png");
+  background-repeat: no-repeat;
   color: #EE3643;
-  rotate: (45deg);
-  height: 30px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   position: absolute;
-  bottom: 247px;
-  left: 149px;
+  bottom: 246px;
+  left: 159px;
   right: 1px;
-  top: 1px;
-}
+  }
 
 .main-catalog-list-products .h5 {
   min-height: 43px;
@@ -392,7 +400,7 @@ h5 {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
-
+margin: 0;
 }
 del {font-family: PT Sans;
   font-style: normal;
@@ -406,19 +414,19 @@ del {font-family: PT Sans;
 }
 
 .main-catalog-list-old-price {
-  min-height: 18px;
+  
   min-width: 172px;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   text-decoration-line: line-through;
   text-transform: uppercase;
   color: #A9A9A9;
+  margin: 0;
+  height: 18px;
+  padding-top: 8px;
 
 }
 
@@ -438,6 +446,8 @@ Width: 141px;
 Height:38px;
 border: none;
 justify-content: center;
+margin-bottom: 21px;
+margin-top: 13px;
 }
 
 .main-catalog-list-products:nth-child(4) {
@@ -563,11 +573,6 @@ justify-content: center;
 
 
 
-
-.popular-sales-grid {
-  display: grid;
-  padding-bottom: 70px;
-}
 
 .catalog-divide {
   font-weight: bold;
