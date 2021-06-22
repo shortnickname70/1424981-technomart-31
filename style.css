@@ -19,6 +19,7 @@
 --light-orange-catalog: #F7F3EC;
 --beige: #E5E5E5;
 --linear-gradient(0deg, #212A3A, #212A3A);
+--header-button-background: rgba(0, 0, 0, 0.0001);
 
 }
 
@@ -82,11 +83,11 @@ h1 {display: none;
   align-content: center;
   box-sizing: border-box;
   margin: 0;
+  height: 42px;
 }
 
 .person-fields li {
   list-style: none;
-  padding: 0;
   margin: 0;
   font-family: Cuprum;
   font-style: normal;
@@ -105,7 +106,23 @@ h1 {display: none;
   padding: 0;
   height: 100%;
   background-color: #293449;
-  margin-right: 20px;
+  margin-left: 42px;
+  cursor: pointer;
+}
+.highest-panel-search-field input:hover {
+  background-color: #212a3a;
+  font-size: 17px;
+  line-height: 1.06;
+  text-align: left;
+  color: #ffffff;
+}
+input::placeholder {
+color: white;
+font-family: Cuprum;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
 }
 
 .highest-panel-logo {
@@ -113,10 +130,16 @@ h1 {display: none;
   width: 220px;
   display: block;
   height: 47px;
-  border-bottom: 5px solid rgba(0, 0, 0, 0.24);
   background-color: #EE3643;
   position: relative;
+  box-shadow: inset 0px -5px 0px rgb(0 0 0 / 24%);
+  cursor: pointer;
 
+}
+
+.highest-panel-logo:hover {
+background: #EE3643;
+box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
 .technomart-logo {
@@ -138,6 +161,7 @@ h1 {display: none;
 .upper-header-wrapper {
   width: 100%;
   background-color: #293449;
+  height: 42px;
 }
 
 .highest-panel-search-field svg {
@@ -145,6 +169,7 @@ h1 {display: none;
   top: 12px;
   position: absolute;
   background-color: transparent;
+  cursor: pointer;
 
 }
 
@@ -167,20 +192,8 @@ h1 {display: none;
   top: 19px;
 }
 
-
-
-.search-label {
-  position: absolute;
-  left: 42px;
-  right: 100px;
-  top: 9px;
-  color: white;
-  background-color: #293449;
-
-}
 .basket {
-  margin-left:73px;
-  margin-right:26px ;
+  padding-left: 73px;
 }
 
 .person-fields {
@@ -204,7 +217,7 @@ a .header-link {
   line-height: 24px;
   color: #FFFFFF;
   margin: 0 auto;
-
+  cursor: pointer;
 }
 
 .header-central-field {
@@ -215,7 +228,6 @@ a .header-link {
   justify-content: space-between;
   display: flex;
   width: 940px;
-  justify-content: space-between;
   align-content: center;
   box-sizing: border-box;
 }
@@ -230,6 +242,10 @@ a .header-link {
   color: white;
   letter-spacing: -1px;
   text-align: center;
+  margin-left: 26px;
+  cursor: pointer;
+  height: 100%;
+
 
 }
 
@@ -285,14 +301,60 @@ a .header-link {
   padding-bottom: 12px;
   padding-right: 24px;
   padding-left: 24px;
-  background: #FFFFFF;
+  background-color:  #FFFFFF;
   box-sizing: border-box;
-  margin-right: 5px;
+ 
 }
+.registration {
+  margin-left: 10px;
+}
+.login {
+  position: relative;
+}
+
+
+.icon-login {
+  left: 17px;
+  top: 12px;
+  position: absolute;
+  background-color: transparent;
+  color: #C5C5C5;
+
+}
+.login:hover path {
+    fill: #3D546F; 
+  
+ } 
+
+ .search-icon:hover path {
+  fill: white; 
+
+} 
+
+.login:hover {
+  background-color: rgba(0, 0, 0, 0.0001); /*  */ 
+  color: #EE3643; /*  */ 
+ } 
+ .registration:hover {
+  background-color: rgba(0, 0, 0, 0.0001); /*  */ 
+  color: #EE3643; /*  */ 
+ } 
+
+ .login:active {
+  background-color: rgba(0, 0, 0, 0.0001); /*  */ 
+  color: #C5C5C5; /*  */ 
+ } 
+ .registration:active {
+  background-color: rgba(0, 0, 0, 0.0001); /*  */ 
+  color: #C5C5C5; /*  */ 
+ } 
+
 
 .header-login-buttons {
   display: flex;
   align-items: flex-start;
+  cursor: pointer;
+
 }
 
 .header-navigation {
@@ -472,6 +534,8 @@ border: none;
 justify-content: center;
 margin-bottom: 21px;
 margin-top: 13px;
+cursor: pointer;
+
 }
 
 .main-catalog-list-products:nth-child(4) {
@@ -705,7 +769,7 @@ font-weight: normal;
   margin-top: 20px;
   justify-content: center;
   border: none;
-  
+  cursor: pointer;
  }
 
 .catalog-divide-perf {
@@ -740,7 +804,7 @@ font-weight: normal;
   border: none;
   display: flex;
   justify-content: center;
-
+  cursor: pointer;
 }
 
 .heading {
@@ -833,6 +897,7 @@ display: flex;
   margin-left: 45px;
   margin-right: 34px;
   padding: 10px 44px 10px 32px;
+  cursor: pointer;
 
 }
 
@@ -1007,7 +1072,7 @@ padding-bottom: 12px;
   width: 220px;
   display: block;
   height: 68px;
-  border-bottom: 5px solid rgba(0, 0, 0, 0.24);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
   background-color: #EE3643;
   position: relative;
   margin-right: 174px;
@@ -1089,6 +1154,8 @@ color: #FFFFFF;
   justify-content: center;
   border-radius: 50%;
   margin-right:1px;
+  cursor: pointer;
+
 }
 
 .footer-text-copyright{
@@ -1229,6 +1296,7 @@ margin-bottom: 35px;
   text-transform: uppercase;
   color: #FFFFFF;
   padding: 9px 30px;
+  cursor: pointer;
 }
 
 .feedback-button-area {
@@ -1243,6 +1311,7 @@ margin-bottom: 35px;
   padding: 37px 80px;
   box-sizing: border-box;
   left: 0;
+  cursor: pointer;
 
 }
 
