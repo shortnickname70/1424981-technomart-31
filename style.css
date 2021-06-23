@@ -20,7 +20,6 @@
 --beige: #E5E5E5;
 --linear-gradient(0deg, #212A3A, #212A3A);
 --header-button-background: rgba(0, 0, 0, 0.0001);
-
 }
 
 body {
@@ -106,16 +105,22 @@ h1 {display: none;
   padding: 0;
   height: 100%;
   background-color: #293449;
-  margin-left: 42px;
   cursor: pointer;
 }
+
 .highest-panel-search-field input:hover {
-  background-color: #212a3a;
+  background-color:white;
   font-size: 17px;
   line-height: 1.06;
   text-align: left;
-  color: #ffffff;
+  color: black;
+  border: none;
 }
+.highest-panel-search-field input:hover path {
+  background-color:white;
+ color: #EE3643;
+}
+
 input::placeholder {
 color: white;
 font-family: Cuprum;
@@ -141,6 +146,11 @@ line-height: 24px;
 background: #EE3643;
 box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
+.highest-panel-logo:active {
+  background: #BA2732;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  }
+  
 
 .technomart-logo {
   position: absolute;
@@ -196,11 +206,24 @@ box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
   padding-left: 73px;
 }
 
+.person-fields:active{
+  background-color:#161D29 ;
+  color: rgba(255, 255, 255, 0.5)
+
+}
+.person-fields:active .header-link{
+    color: rgba(255, 255, 255, 0.5)
+
+}
+
 .person-fields {
   display: flex;
-  justify-content: space-around;
-  margin: 0;
-  vertical-align: center;
+    justify-content: space-around;
+    margin: 0;
+    vertical-align: middle;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
 }
 
 a .header-link {
@@ -242,11 +265,12 @@ a .header-link {
   color: white;
   letter-spacing: -1px;
   text-align: center;
-  margin-left: 26px;
   cursor: pointer;
   height: 100%;
-
-
+}
+.checkout:active {
+  background-color: #63A63E;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .header-thesis {
@@ -330,6 +354,9 @@ a .header-link {
   fill: white; 
 
 } 
+.login:active path {
+  fill: #C5C5C5; 
+} 
 
 .login:hover {
   background-color: rgba(0, 0, 0, 0.0001); /*  */ 
@@ -349,6 +376,10 @@ a .header-link {
   color: #C5C5C5; /*  */ 
  } 
 
+ .header-navigation-element:hover {
+  background-color: #293449;
+  box-shadow: inset 0px -5px 0px #293449;
+ }
 
 .header-login-buttons {
   display: flex;
@@ -359,13 +390,18 @@ a .header-link {
 
 .header-navigation {
   background: #32425C;
-  padding: 16px 53px;
+  padding-bottom: 20px;
+  padding-top: 16px;
+  padding-left: 53px;
+  padding-right: 53px;
   display: flex;
   margin: 0 0;
   justify-content: space-between;
   align-content: center;
   box-sizing: border-box;
-  list-style: none
+  list-style: none;
+  box-shadow: inset 0px -5px 0px #293449;
+  height: 60px;
 }
 
 .header-navigation-grid {
@@ -531,12 +567,30 @@ background-color: #EE3643;
 Width: 141px;
 Height:38px;
 border: none;
-justify-content: center;
 margin-bottom: 21px;
 margin-top: 13px;
 cursor: pointer;
-
+position: relative;
+padding-left: 32px;
 }
+.main-catalog-button::after{
+  content: ''; 
+  position: absolute; 
+  top: 0;
+  right: 0;
+  border: 10px solid transparent; 
+  border-top: 10px solid white; 
+  border-right: 10px solid white;
+}
+ .main-catalog-button::before{
+  content: ''; 
+  position: absolute; 
+  bottom: 0;
+  right: 0;
+  border: 10px solid transparent; 
+  border-bottom: 10px solid white; 
+  border-right: 10px solid white;
+} 
 
 .main-catalog-list-products:nth-child(4) {
   margin-right: 0;
@@ -699,8 +753,38 @@ cursor: pointer;
   border: 1px solid #EAEAEA;
   box-sizing: border-box;
   position: relative;
-
+background-color: transparent;
 }
+
+.popular-manufacturer-logo:hover {
+   background-color: transparent;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+  }
+
+
+  .popular-manufacturer-logo:active {
+     border: 1px solid #EAEAEA;
+    opacity: 0.5;
+    box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+    }
+
+
+.footer-logo-and-navigation-row a:hover {
+  text-decoration: underline;
+}
+.footer-catalog-navigation a:hover {
+  text-decoration: underline;}
+
+  .footer-logo-and-navigation-row a:active {
+    opacity: 0.5;
+    text-decoration: none;
+  }
+  .footer-catalog-navigation a:active {
+    opacity: 0.5;
+    text-decoration: none;
+  }
+
 
 .popular-manufacturer-logo img {
   max-width: 100%;
@@ -712,13 +796,6 @@ cursor: pointer;
   right: 0;
   bottom: 0;
   left: 0;
-}
-
-
-.popular-manufacturer-list li {
-  width: 220px;
-  height: 145px;
-  list-style: none;
 }
 
 .popular-manufacturer-logo:nth-child(4n) {
@@ -806,6 +883,15 @@ font-weight: normal;
   justify-content: center;
   cursor: pointer;
 }
+.red-button:hover {
+ background-color:  #CA2C37;
+
+}
+.red-button:active {
+  background-color:  #BA2732;
+ 
+ }
+
 
 .heading {
   font-size: 30px;
@@ -1568,6 +1654,64 @@ text-transform: unset;
   background-repeat: no-repeat;
   background-position: top center;
 }
+
+.basket-buy-icon {
+  position: absolute;
 }
 
+.product-modal-buy {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 220px;
+  height: 150px;
+  background-color: #ffffff;
+  list-style: none;
+  margin: 0px;
+}
+.product-modal-buy-buy{
+display: block;
+width: 135px;
+height: 38px;
+box-shadow: inset 0px -3px 0px #367315;
+background: #63A63E;
+border-radius: 3px;
+font-family: Cuprum;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+color: #FFFFFF;
+text-transform: uppercase;
+margin-top: 38px;
+text-align: center;
+margin-bottom: 10px;
+}
 
+.product-modal-buy-in-bookmarks {
+display: block;
+width: 135px;
+height: 38px;
+border: solid 3px #63a63e;
+color: black;
+box-sizing: border-box;
+border-radius: 3px;
+text-align: center;
+font-family: Cuprum;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+text-transform: uppercase;
+color: #32425C;
+margin-right: 42px;
+margin-top: 0;
+}
+
+.main-catalog-list-products:hover .product-modal-buy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
