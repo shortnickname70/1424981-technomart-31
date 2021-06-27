@@ -135,9 +135,9 @@
                   <li class="slider-item slide slide-current">
                     <h3 class="slide-title">Перфораторы</h3>
                     <p class="slide-title-description"> Настоящие мужские игрушки </p>
-
                     <button type="button" class="red-button">Открыть каталог</button>
                   </li>
+
                   <li class="slider-item slide">
                     <h3 class="slide-title">Дрели
                     </h3>
@@ -145,6 +145,7 @@
                     <p class="slide-title-description">Соседям на радость!</p>
                     <button type="button" class="red-button">Открыть каталог</button>
                   </li>
+
                 </ul>
                 <div class="slider-controls">
                   <button type="button"><span hidden>Первый слайд</span></button>
@@ -344,22 +345,38 @@
             <p class="text-information">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
           </div>
-          <div class="delivery">
-            <div class="list-left-field">
-              <select name="services-list" class="services-list">
-                <option value="Доставка">Доставка</option>
-                <option value="Гарантия">Гарантия</option>
-                <option value="Кредит">Кредит</option>
-              </select>
+          <div class="featers">
+
+            <div class="features-inputs-block">
+              <input type="radio" id="feature-delivery" value="rechargeable" name="feature-item" class="feature-delivery-radio" checked> 
+              <input type="radio" id="feature-garantie" value="mains-supply" name="feature-item" class="feature-garantie-radio">
+              <input type="radio" id="feature-credit" value="mains-supply" name="feature-item" class="feature-credit-radio">
+            
+            
+              <ul class="featers-list">
+                <li class="featers-list-item">
+                  <label for="feature-delivery" class="feature-delivery-label">Доставка</label>
+                </li>
+                <li class="featers-list-item">
+                  <label for="feature-garantie" class="feature-garantie-label">Гарантия</label>
+                </li>
+                <li class="featers-list-item">
+                  <label for="feature-credit" class="feature-credit-label">Кредит</label>
+                </li>
+              </ul>
+          
+              <div class="delivery-right-field">
+                <p class="heading">Доставка</p>
+                <p class="text-information">
+                  Мы с удовольствием доставим ваш товар прямо
+                  к вашему подъезду совершенно бесплатно!
+                  <br>
+                  Ведь мы неплохо заработаем,
+                  <br>
+                  поднимая его на ваш этаж! </p>
+              </div>
+            
             </div>
-            <div class="delivery-right-field">
-              <p class="heading">Доставка</p>
-              <p class="text-information">Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем,
-                поднимая его на ваш этаж! </p>
-            </div>
-            <img src="img/delivery-truck.png" width="468" height="261" alt="Карта">
 
           </div>
 

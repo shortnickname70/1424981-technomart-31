@@ -111,6 +111,18 @@ h1 {
   outline: 0px transparent;
 }
 
+.search-input:focus {
+  background-color: white;
+}
+
+.search-input:focus + .search-label {
+  display: none;
+}
+
+.search-input:focus + svg path {
+  fill: red;
+}
+
 /* .highest-panel-search-field .search-label:hover {
 color: red;
 } */
@@ -119,14 +131,13 @@ color: red;
   fill: green;
 }
 
-/* .highest-panel-search-field input:hover + label {
-fill:white;
-color: red;
-} */
+.highest-panel-search-field:focus input {
+  background-color: white;
+}
 /* .highest-panel-search-field input:hover path {
 background-color:white;
 color: #EE3643;
-} */
+}
 
 /* input::placeholder {
 color: white;
@@ -1280,6 +1291,7 @@ h2.heading {
 .services {
   background-color: #F1F5F7;
   padding: 0px;
+  height: 522px;
 
 }
 
@@ -1288,8 +1300,115 @@ h2.heading {
   margin-bottom: 67px;
 }
 
-.delivery {
+.featers-list {
+list-style: none;
+padding: 0;
+position: relative;
+
+}
+.featers-list::after {
+  content: "";
+  background-image: url("img/features-shadow.png");
+  background-repeat: no-repeat;
+  height: 279px;
+  width: 10px;
+  position: absolute;
+  bottom: -48px;
+  left: 230px;
+  
+  }
+.featers-list-item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  }
+
+.feature-delivery-label,
+.feature-garantie-label,
+.feature-credit-label {
+display: block;
+Width: 240px;
+Height: 61px;
+cursor: pointer;
+background: #32425C;
+box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+font-family: Cuprum;
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 30px;
+color: #FFFFFF;
+box-sizing: border-box;
+padding-left: 22px;
+padding-top: 14px;
+}
+
+.feature-delivery-label:hover,
+.feature-garantie-label:hover,
+.feature-credit-label:hover {
+  background: #293449;
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+}
+
+/* .feature-delivery-label:focus,
+.feature-garantie-label:focus,
+.feature-credit-label:focus {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 0px #FFFFFF, inset 0px 1px 0px #FFFFFF;
+} */
+
+.feature-delivery-label {
+  box-shadow: none;
+}
+.feature-credit-label {
+  box-shadow: none;
+}
+
+.feature-delivery-radio,
+.feature-garantie-radio,
+.feature-credit-radio{
+visibility: hidden;
+position: absolute;
+}
+
+.features-inputs-block {
+  position: relative;
   display: flex;
+}
+
+.feature-delivery-radio:checked ~ .featers-list .feature-delivery-label {
+  background-color: white;
+  color: #32425C;
+  box-shadow: 0px 1px 0px #FFFFFF;
+}
+
+.feature-garantie-radio:checked ~ .featers-list .feature-garantie-label {
+  background-color: white;
+  color: #32425C;
+  box-shadow: 0px 1px 0px #FFFFFF;
+}
+
+.feature-credit-radio:checked ~ .featers-list .feature-credit-label {
+  background-color: white;
+  color: #32425C;
+  box-shadow: 0px 1px 0px #FFFFFF;
+}
+
+.feature-garantie-radio:checked ~ .delivery-right-field {
+  display: none;
+}
+
+.delivery-right-field {
+padding-left: 80px;
+padding-right: 340px;
+background-image: url("img/delivery-truck.png");
+background-position: right top 20px;
+background-repeat: no-repeat;
+min-height: 260px;
+}
+.delivery-right-field p:nth-child(2) {
+margin-top: 30px;
 }
 
 option {
@@ -2019,6 +2138,18 @@ align-content: flex-start; */
 }
 
 .main-catalog-list-products:hover .main-catalog-list-image {
+  visibility: hidden;
+}
+
+.catalog-list-products:hover .product-modal-buy {
+  /* display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-content: flex-start; */
+  display: block;
+}
+
+.catalog-list-products:hover .main-catalog-list-image {
   visibility: hidden;
 }
 
