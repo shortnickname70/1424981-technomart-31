@@ -115,7 +115,7 @@ h1 {
   background-color: white;
 }
 
-.search-input:focus+.search-label {
+.search-input:focus ~.search-label {
   display: none;
 }
 
@@ -123,32 +123,9 @@ h1 {
   fill: red;
 }
 
-/* .highest-panel-search-field .search-label:hover {
-color: red;
-} */
-
-.highest-panel-search-field:hover svg {
-  fill: green;
+.highest-panel-search-field:hover+svg  {
+  opacity: 1;
 }
-
-.highest-panel-search-field:focus input {
-  background-color: white;
-}
-
-/* .highest-panel-search-field input:hover path {
-background-color:white;
-color: #EE3643;
-}
-
-/* input::placeholder {
-color: white;
-font-family: Cuprum;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 24px;
-
-} */
 
 .search-label {
   color: white;
@@ -210,9 +187,7 @@ line-height: 24px;
   position: absolute;
   background-color: transparent;
   cursor: pointer;
-
 }
-
 
 .bookmark-icon,
 .basket-icon {
@@ -235,15 +210,6 @@ line-height: 24px;
   margin-left: 73px;
 }
 
-.person-fields:focus {
-  background-color: #161D29;
-  color: rgba(255, 255, 255, 0.5)
-}
-
-.person-fields:focus .header-link {
-  color: rgba(255, 255, 255, 0.5)
-}
-
 .person-fields {
   display: flex;
   justify-content: space-around;
@@ -254,6 +220,16 @@ line-height: 24px;
   cursor: pointer;
   padding: 0;
 }
+
+.person-fields:focus {
+  background-color: white;
+  color: rgba(255, 255, 255, 0.5)
+}
+
+.person-fields:focus .header-link {
+  color: rgba(255, 255, 255, 0.5)
+}
+
 
 
 .highest-panel-buy-button {
@@ -465,17 +441,18 @@ line-height: 24px;
   fill: #3D546F;
 
 }
+.search-icon path {
+  opacity: 0.3;
+  }
 
-.search-icon:hover path {
-  fill: white;
+ .highest-panel-search-field:hover path {
+ opacity: 1;
 
-}
+} 
 
 .login:focus path {
   fill: #C5C5C5;
 }
-
-
 
 .login:hover {
   background-color: rgba(0, 0, 0, 0.0001);
@@ -629,7 +606,6 @@ div .header-person-blocks:nth-child(1) {
 .filter-value-list {
   display: flex;
   background: #F7F3EC;
-  justify-content: space-between;
   width: 700px;
   height: 38px;
   margin: 0;
@@ -660,6 +636,70 @@ div .header-person-blocks:nth-child(1) {
   border-bottom: dotted 2px red;
 }
 
+.filter-button-price {
+  margin-left: 140px;
+}
+.filter-button-price:hover {
+   opacity: 1;
+  color: rgba(0, 0, 0, 1);
+  border-bottom: solid 2px red;
+}
+.filter-button-price:focus {
+opacity: 1;
+color: #EE3643;
+border-bottom: none;
+}
+
+.filter-button-type{
+  margin-left: 70px;
+}
+.filter-button-type:hover{
+  opacity: 1;
+  color: rgba(0, 0, 0, 1);
+  border-bottom: solid 2px red;
+}
+.filter-button-type:focus{
+opacity: 1;
+color: #EE3643;
+border-bottom: none;
+}
+
+.filter-button-function{
+  margin-left: 65px;
+}
+.filter-button-function:hover{
+  opacity: 1;
+  color: rgba(0, 0, 0, 1);
+  border-bottom: solid 2px red;
+}
+.filter-button-function:focus{
+opacity: 1;
+color: #EE3643;
+border-bottom: none;
+}
+
+.up-direction {
+  margin-left: 46px;
+  cursor: pointer;
+}
+.up-direction:hover path {
+  fill: black;
+}
+.up-direction:focus path {
+  fill: #EE3643;
+}
+
+.down-direction {
+  margin-left: 21px;
+  cursor: pointer;
+}
+.down-direction:hover path {
+  fill: black;
+}
+.down-direction:focus path {
+  fill: #EE3643;
+}
+
 .filter-manufacturer-list,
 .filter-power-list {
   padding: 0;
@@ -680,6 +720,10 @@ div .header-person-blocks:nth-child(1) {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.filter-manufacturer-list ul label {
+padding-left: 18px;
 }
 
 .filter-manufacturer-list ul li {
@@ -731,6 +775,87 @@ input[type="checkbox"] {
   text-transform: uppercase;
 }
 
+.filter-grid-column {
+  width: 220px;
+  margin-top: 14px;
+}
+
+.filter-heading-range {
+  margin-bottom: 11px;
+  margin-top: 14px;
+}
+
+#bosch,
+#interscol,
+#hitachi,
+#dewalt,
+#makita,
+#filter-rechargeable,
+#filter-mains-supply {
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+ }
+
+.filter-manufacturer-item{
+position: relative;
+}
+.filter-checkbox-label {
+  cursor: pointer;
+}
+
+.chekbox-off-icon{
+  position: absolute;
+  bottom: 18px;
+  left: 0px;
+}
+
+.chekbox-on-icon{
+  position: absolute;
+  bottom: 18px;
+  visibility: hidden;
+  left: 0px;
+ }
+
+.filter-checkbox-input {
+  visibility: hidden;
+}
+
+.filter-checkbox-input:checked ~ .chekbox-on-icon {
+  visibility: visible;
+} 
+
+.filter-power-item {
+  position: relative;
+}
+
+.radio-on-icon {
+position: absolute;
+left: 0;
+bottom: 18px;
+visibility: hidden;
+}
+
+.radio-off-icon {
+  position: absolute;
+  left: 0;
+  bottom: 18px;
+ }
+
+ .filter-radio-input {
+  visibility: hidden;
+ }
+
+ .filter-radio-label {
+   padding-left: 20px;
+ }
+
+ .filter-radio-input:checked ~ .radio-on-icon {
+  visibility: visible;
+} 
+
+
 .heading-perf-row {
   background: #F1F5F7;
   padding: 29px 739px 30px 29px;
@@ -742,16 +867,6 @@ input[type="checkbox"] {
   text-transform: uppercase;
   color: #32425C;
   margin-bottom: 20px;
-}
-
-.filter-grid-column {
-  width: 220px;
-  margin-top: 14px;
-}
-
-.filter-heading-range {
-  margin-bottom: 11px;
-  margin-top: 14px;
 }
 
 .main-catalog-list {
@@ -1479,6 +1594,10 @@ h2.heading {
   display: none;
 }
 
+.feature-credit-radio:checked~.delivery-right-field {
+  display: none;
+}
+
 .delivery-right-field {
   padding-left: 80px;
   padding-right: 340px;
@@ -1702,7 +1821,7 @@ select {
 .social-button {
   width: 44px;
   height: 44px;
-  background-color: linear-gradient(0deg, #212A3A, #212A3A);
+  /* background-color: linear-gradient(0deg, #212A3A, #212A3A); */
   color: inherit;
   display: flex;
   align-items: center;
@@ -1710,8 +1829,15 @@ select {
   border-radius: 50%;
   margin-right: 1px;
   cursor: pointer;
-
+  background: #212A3A;
 }
+
+.social-button:hover {
+background: #EE3643;
+} 
+.social-button:focus {
+  background: #EE3643;
+  } 
 
 .footer-text-copyright {
   margin-top: 35px;
@@ -1721,7 +1847,7 @@ select {
 .footer-feedback {
   color: white;
   margin-top: 35px;
-
+  cursor: pointer;
 }
 
 .footer-made-by {
@@ -1738,10 +1864,27 @@ select {
 .footer-feedback .footer-text:nth-child(2) {
   color: #FFD180;
 }
-
 .footer-made-by .footer-text:nth-child(2) {
   color: #FFD180;
 }
+
+
+.footer-feedback .footer-text:nth-child(2):hover {
+color: #FFD180;
+text-decoration: underline; 
+}
+.footer-made-by .footer-text:nth-child(2):hover {
+color: #FFD180;
+text-decoration: underline; 
+}
+
+.footer-feedback .footer-text:nth-child(2):focus {
+color: #EE3643;
+}
+.footer-made-by .htmlacademy-site:focus {
+color: #EE3643;
+}
+
 
 .footer-address {
   font-size: 18px;
@@ -1778,10 +1921,6 @@ select {
 
 }
 
-.social-button {
-  background: #212A3A;
-}
-
 .personal {
   font-size: 16px;
   line-height: 18px;
@@ -1816,6 +1955,16 @@ select {
   text-align: center;
   margin-left: 10px;
   padding: 10px 15px;
+  cursor: pointer;
+}
+.pagination-item:hover {
+  border: 1px solid #C5C5C5;
+
+}
+
+.pagination-item:focus {
+  border: 1px solid #EE3643;
+
 }
 
 .pagination-item:last-child {
@@ -1828,27 +1977,23 @@ select {
   margin-left: 0;
 }
 
+.pagination-page {
+  color: #000000;
+}
+
 .perforators-information-wrapper {
-  width: 1200px;
+  width: 100%;
   background-color: #F1F5F7;
   height: 261px;
   margin: 0;
   padding: 0;
 }
-
-
-#bosch,
-#interscol,
-#hitachi,
-#dewalt,
-#makita,
-#filter-rechargeable,
-#filter-mains-supply {
-  font-size: 15px;
-  line-height: 19px;
-  text-transform: uppercase;
+.two-words-about-perf {
+  margin-bottom: 25px;
   color: #000000;
 }
+
+
 
 
 .products-image {
@@ -2189,8 +2334,16 @@ select {
   padding-top: 10px;
   padding-left: 15px;
   cursor: pointer;
-
 }
+
+.product-modal-buy-buy:hover {
+   background: #5FBB2D;
+}
+
+.product-modal-buy-buy:focus {
+  background: #518534;
+}
+
 
 .product-modal-buy-in-bookmarks {
   display: block;
@@ -2210,6 +2363,17 @@ select {
   padding-top: 8px;
   cursor: pointer;
 }
+
+.product-modal-buy-in-bookmarks:hover {
+border: 3px solid #32425C;
+border-radius: 3px;
+ }
+
+ .product-modal-buy-in-bookmarks:focus {
+  border: 3px solid #32425C;
+  border-radius: 3px;
+  opacity: 0.5;
+   }
 
 .main-catalog-list-products:hover .product-modal-buy {
   /* display: flex;
