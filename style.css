@@ -773,6 +773,7 @@ input[type="checkbox"] {
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .filter-grid-column {
@@ -811,12 +812,20 @@ position: relative;
   left: 0px;
 }
 
+.chekbox-off-icon:hover path{
+fill:#B5B5B5 ;
+}
+
 .chekbox-on-icon{
   position: absolute;
   bottom: 18px;
   visibility: hidden;
   left: 0px;
  }
+
+ .chekbox-on-icon:hover path{
+  fill:#B5B5B5 ;
+  }
 
 .filter-checkbox-input {
   visibility: hidden;
@@ -837,11 +846,20 @@ bottom: 18px;
 visibility: hidden;
 }
 
+.radio-on-icon:hover path {
+  fill:#B5B5B5 ;
+  }
+
 .radio-off-icon {
   position: absolute;
   left: 0;
   bottom: 18px;
  }
+
+ .radio-off-icon:hover path {
+  fill:#B5B5B5 ;
+  }
+
 
  .filter-radio-input {
   visibility: hidden;
@@ -1657,6 +1675,10 @@ select {
   padding-bottom: 22px;
 }
 
+.modal-map iframe {
+  border: none;
+}
+
 .about-company .text-information {
   width: 460px;
 }
@@ -1959,6 +1981,17 @@ color: #EE3643;
   padding: 10px 15px;
   cursor: pointer;
 }
+
+.pagination-item:first-child {
+  width: min-content;
+  margin-left: 0;
+}
+
+.pagination-item:last-child {
+  width: min-content;
+  padding: 10px 30px;
+
+}
 .pagination-item:hover {
   border: 1px solid #C5C5C5;
 
@@ -1969,16 +2002,6 @@ color: #EE3643;
 
 }
 
-.pagination-item:last-child {
-  width: min-content;
-  padding: 10px 30px;
-}
-
-.pagination-item:first-child {
-  width: min-content;
-  margin-left: 0;
-}
-
 .pagination-page {
   color: #000000;
 }
@@ -1986,10 +2009,12 @@ color: #EE3643;
 .perforators-information-wrapper {
   width: 100%;
   background-color: #F1F5F7;
-  height: 261px;
+  height: 197px;
   margin: 0;
   padding: 0;
+  padding-top: 63px;
 }
+
 .two-words-about-perf {
   margin-bottom: 25px;
   color: #000000;
@@ -2075,11 +2100,11 @@ color: #EE3643;
   color: #000000;
 }
 
-.modal,
+/* .modal,
 .modal-catalog,
 .modal-map {
-  /* position: fixed; */
-}
+  position: fixed;
+} */
 
 .feedback-modal-wrapper {
   display: flex;
@@ -2457,7 +2482,7 @@ border-radius: 3px;
   left: 81px;
   top: 48px;
   border: none;
-  cursor: pointer;
+  
 }
 
 .checkout-button,
@@ -2472,6 +2497,7 @@ border-radius: 3px;
   text-transform: uppercase;
   border: none;
   margin-top: 37px;
+  cursor: pointer;
 }
 
 .checkout-button {
