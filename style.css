@@ -492,19 +492,6 @@ h1 {
 
 }
 
-.header-navigation-element:hover {
-  background-color: #293449;
-  box-shadow: inset 0px -5px 0px #293449;
-  box-sizing: border-box;
-
-}
-
-.header-navigation-element:focus {
-  background-color: #293449;
-  box-shadow: inset 0px -5px 0px #293449;
-  opacity: 0.5;
-}
-
 .header-login-buttons {
   display: flex;
   align-items: flex-start;
@@ -515,10 +502,10 @@ h1 {
 .header-navigation {
   background: #32425C;
   padding-left: 53px;
-  padding-right: 53px;
+  padding-right: 47px;
   display: flex;
   margin: 0 0;
-  justify-content: space-between;
+  
   align-content: center;
   box-sizing: border-box;
   list-style: none;
@@ -544,8 +531,25 @@ div .header-person-blocks:nth-child(1) {
   align-items: center;
   color: #FFFFFF;
   height: 60px;
+  width: min-content;
+}
+.header-navigation-item {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
+.header-navigation-item:hover  {
+  background-color: #293449;
+  box-shadow: inset 0px -5px 0px #293449;
+  box-sizing: border-box;
+}
+
+.header-navigation-element:focus {
+  background-color: #293449;
+  box-shadow: inset 0px -5px 0px #293449;
+  opacity: 0.5;
+}
 
 .bread-crumbs-row {
   display: flex;
