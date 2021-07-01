@@ -171,7 +171,7 @@ h1 {
   display: block;
   position: relative;
   height: 42px;
-  margin-right: 43px;
+ 
 
 }
 
@@ -194,7 +194,11 @@ h1 {
   opacity: 0.3;
   position: absolute;
   background-color: transparent;
-}
+  }
+
+  .bookmark {
+    margin-left: 43px;
+  }
 
 .bookmark-icon {
   left: -24px;
@@ -208,6 +212,7 @@ h1 {
 
 .basket {
   margin-left: 73px;
+  margin-right: 26px;
 }
 
 .person-fields {
@@ -219,22 +224,33 @@ h1 {
   align-items: center;
   cursor: pointer;
   padding: 0;
+
 }
 
-.person-fields:focus {
-  background-color: white;
-  color: rgba(255, 255, 255, 0.5)
+.header-link {
+  color: white;
+}
+.person-fields-wrapper {
+  height: 100%;
 }
 
-.person-fields:focus .header-link {
-  color: rgba(255, 255, 255, 0.5)
+.person-fields-wrapper:hover ul li svg{
+ opacity: 1;
 }
 
+.person-fields-wrapper:focus {
+  background-color: #161D29;
+  color: rgba(255, 255, 255, 0.5) ;
+  opacity: 0.3;
+}
 
+.person-fields-wrapper:focus ul li .header-link{
+   color: rgba(255, 255, 255, 0.5) ; 
+}
 
 .highest-panel-buy-button {
   width: 150px;
-  font-family: Cuprum;
+  font-family: Cuprum, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -268,7 +284,7 @@ h1 {
   text-align: center;
   cursor: pointer;
   height: 100%;
-  margin-left: auto;
+ 
 }
 
 .checkout:focus {
