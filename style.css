@@ -1524,7 +1524,7 @@ h2.heading {
   height: 279px;
   width: 10px;
   position: absolute;
-  bottom: -48px;
+  bottom: 0px;
   left: 230px;
 
 }
