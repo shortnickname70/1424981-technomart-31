@@ -40,15 +40,15 @@
           </form>
 
           <ul class="person-fields">
-            <li class="bookmark"> <svg width="14" height="16" class="bookmark-icon" viewBox="0 0 14 16" fill="none"
+            <li class="bookmark person-fields-wrapper" tabindex="0"> <svg width="14" height="16" class="bookmark-icon" viewBox="0 0 14 16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"
                   fill="white" />
               </svg>
-              <a href="blank.html" class="header-link " style="color: white">Закладки: 0</a>
+              <a href="blank.html" class="header-link ">Закладки: 0</a>
             </li>
-            <li class=" basket"> <svg width="15" height="15" class="basket-icon" viewBox="0 0 15 15" fill="none"
+            <li class=" basket person-fields-wrapper" tabindex="0"> <svg width="15" height="15" class="basket-icon" viewBox="0 0 15 15" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
@@ -58,7 +58,7 @@
                   fill="white" />
                 <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
               </svg>
-              <a href="blank.html" class="header-link " style="color: white">Корзина: 0</a>
+              <a href="blank.html" class="header-link ">Корзина: 0</a>
             </li>
           </ul>
 
@@ -100,7 +100,7 @@
           </a>
           <ul class="person-area-list">
             <li > <a href="blank.html" class="person-area-my-orders"> Мои заказы</a></li>
-            <li><svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg" class="person-area-list-point">
+            <li><svg width="4" height="5" viewBox="0 0 4 5" class="person-area-point" fill="none" xmlns="http://www.w3.org/2000/svg" class="person-area-list-point">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2.00023 0.994136C3.09715 0.994136 3.98643 1.88356 3.98643 2.9801C3.98643 4.07757 3.09715 4.96646 2.00023 4.96646C0.903104 4.96646 0.013898 4.07757 0.013898 2.9801C0.013898 1.88356 0.903104 0.994136 2.00023 0.994136Z" fill="#32425C"/>
 </svg>
 </li>
@@ -110,16 +110,16 @@
       </div>
     </div>
     <div class="container">
-      <div class="header-navigation-grid">
+      <div class="header-navigation-grid" tabindex="1">
         <nav>
           <ul class="header-navigation">
-            <li><a href="index.html" class="header-navigation-element">Главная</a></li>
-            <li><a href="blank.html" class="header-navigation-element">Компания</a></li>
-            <li><a href="catalog.html" class="header-navigation-element">Каталог</a></li>
-            <li><a href="blank.html" class="header-navigation-element">Новости</a></li>
-            <li><a href="blank.html" class="header-navigation-element">Спецпредложения</a></li>
-            <li><a href="blank.html" class="header-navigation-element">Доставка</a></li>
-            <li><a href="blank.html" class="header-navigation-element">Контакты</a></li>
+            <li class="header-navigation-item"><a href="index.html" class="header-navigation-element">Главная</a></li>
+            <li class="header-navigation-item"><a href="blank.html" class="header-navigation-element">Компания</a></li>
+            <li class="header-navigation-item"><a href="catalog.html" class="header-navigation-element">Каталог</a></li>
+            <li class="header-navigation-item"><a href="blank.html" class="header-navigation-element">Новости</a></li>
+            <li class="header-navigation-item"><a href="blank.html"  class="header-navigation-element">Спецпредложения</a></li>
+            <li class="header-navigation-item"><a href="blank.html" class="header-navigation-element">Доставка</a></li>
+            <li class="header-navigation-item"><a href="blank.html" class="header-navigation-element">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -582,18 +582,19 @@
 
         </ul>
 
-        <ul class="pagination-list">
-          <li class="pagination-item">
-            <a class="pagination-page">1</a>
+        <ul class="pagination-list" 
+        >
+          <li class="pagination-item " tabindex="1" >
+            <a href="catalog.html" class="pagination-page current">1</a>
           </li>
-          <li class="pagination-item">
-            <a href="#" class="pagination-page">2</a>
+          <li class="pagination-item" tabindex="1">
+            <a href="page2.html" class="pagination-page">2</a>
           </li>
-          <li class="pagination-item">
-            <a href="#" class="pagination-page">3</a>
+          <li class="pagination-item" tabindex="1">
+            <a href="page3.html" class="pagination-page">3</a>
           </li>
-          <li class="pagination-item">
-            <a href="#" class="pagination-page">следующая</a>
+          <li class="pagination-item" tabindex="1">
+            <a href="blank.html" class="pagination-page">следующая</a>
           </li>
         </ul>
 
@@ -700,7 +701,7 @@
 
           <div class="footer-feedback">
             <p class="footer-text">Обратная связь:</p>
-            <p class="footer-text">mail@htmlacademy.ru</p>
+            <a href="mail@htmlacademy.ru" class="footer-text">mail@htmlacademy.ru</a>
           </div>
           <div class="footer-made-by">
             <p class="footer-text">Разработано — </p>
