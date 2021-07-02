@@ -86,19 +86,6 @@ h1 {
 
 }
 
-.person-fields li {
-  list-style: none;
-  font-family: Cuprum;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-  color: var(--basic-white);
-  justify-content: space-around;
-  vertical-align: middle;
-  text-align: center;
-  position: relative;
-}
 
 .highest-panel-search-field input {
   width: 100%;
@@ -109,10 +96,12 @@ h1 {
   padding: 5px 5px 5px 42px;
   box-sizing: border-box;
   outline: 0px transparent;
+  color: #293449;
 }
 
 .search-input:focus {
   background-color: white;
+  color: black;
 }
 
 .search-input:focus ~.search-label {
@@ -146,12 +135,6 @@ h1 {
   cursor: pointer;
 
 }
-
-/* 
-.highest-panel-logo:focus {
-  background: #BA2732;
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
-} */
 
 
 .technomart-logo {
@@ -192,23 +175,24 @@ h1 {
   background-color: transparent;
   }
 
-  .bookmark {
-    margin-left: 43px;
+  .bookmark,
+  .basket {
+    display: block;
+    box-sizing: border-box;
+    flex-grow: 1;
+   
   }
+ 
+
 
 .bookmark-icon {
-  left: -24px;
+  left: 9px;
   top: 4px;
 }
 
 .basket-icon {
   top: 4px;
-  left: -23px;
-}
-
-.basket {
-  margin-left: 73px;
-  margin-right: 26px;
+  left: 12px;
 }
 
 .person-fields {
@@ -220,22 +204,37 @@ h1 {
   align-items: center;
   cursor: pointer;
   padding: 0;
+  width: 301px;
+}
 
+.person-fields li {
+  list-style: none;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  justify-content: space-around;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  
 }
 
 .header-link {
   color: white;
 }
 .person-fields-wrapper {
-  height: 100%;
+  height: 42px;
 }
 
-.person-fields-wrapper:hover ul li svg{
+.person-fields-wrapper:hover svg{
  opacity: 1;
 }
 
 .person-fields-wrapper:focus {
-  background-color: #161D29;
+  background-color: #161D29; 
   color: rgba(255, 255, 255, 0.5) ;
   opacity: 0.3;
 }
@@ -308,25 +307,33 @@ h1 {
   align-items: center;
   display: flex;
   flex-direction: column;
+  position: relative;
+  
 }
 
 .header-phone-number {
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-  display: flex;
-  align-items: center;
   color: #EE3643;
   border: 3px solid #FFFFFF;
   background: #F3F7F9;
   padding: 7px 50px 8px 74px;
+  
 }
+
+.icon-phone {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 40px;
+  top: 15px;
+  background-color: transparent;
+  }
 
 .header-address {
   font-size: 14px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
   text-align: center;
   color: #32425C;
 }
@@ -886,6 +893,7 @@ visibility: hidden;
 
  .filter-radio-label {
    padding-left: 20px;
+   cursor: pointer;
  }
 
  .filter-radio-input:checked ~ .radio-on-icon {
@@ -1235,7 +1243,7 @@ del {
 .popular-manufacturer-logo a:focus {
   border: 1px solid #EAEAEA;
   opacity: 0.5;
-  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.25);
   background-color: transparent;
 }
 
@@ -1281,10 +1289,6 @@ del {
   margin-right: 0;
 }
 
-/* grid feutures end */
-
-
-
 
 .catalog-divide {
   font-weight: bold;
@@ -1300,7 +1304,6 @@ del {
 
 }
 
-
 .container {
   width: 940px;
   margin: 0 auto;
@@ -1308,10 +1311,8 @@ del {
 }
 
 .catalog-divide-button {
-  /* background-color:#FFFFFF ; */
   background-color: transparent;
   mix-blend-mode: normal;
-  /* opacity: 0.3; */
   font-size: 14px;
   line-height: 18px;
   font-family: Cuprum;
@@ -1329,76 +1330,7 @@ del {
   cursor: pointer;
 }
 
-.catalog-divide-perf {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 36px;
-  align-items: center;
-  width: 620px;
-  margin: 0 auto;
-  position: relative;
-  grid-row: 2/4;
-  grid-column: 1/3;
 
-
-}
-
-.slider-label-list {
-position: absolute;
-bottom: 36px;
-left: calc(50% - 15px);
-height: 10px;
-width: 30px;
-
-}
-
-.perf-slide-label::before {
-  position: absolute;
-  content: "";
-  background-color: white;
-  border-radius: 50%;
-  width:10px;
-  height: 10px;
-  left: 0;
-}
-
-.perf-slide-label::after {
-  position: absolute;
-  content: "";
-  background-color: red;
-  border-radius: 50%;
-  width:6px;
-  height: 6px;
-  left: 2px;
-  bottom: 2px;
-}
-
-.drill-slide-label::before {
-  position: absolute;
-  content: "";
-  background-color: white;
-  border-radius: 50%;
-  width:10px;
-  height: 10px;
-  right: 0;
-}
-
-.drill-slide-label::after {
-  position: absolute;
-  content: "";
-  background-color: red;
-  border-radius: 50%;
-  width:6px;
-  height: 6px;
-  right: 2px;
-  bottom: 2px;
-}
-
-
-.slider-list .red-button {
-  margin-top: 113px;
-
-}
 
 .red-button {
   font-size: 14px;
@@ -2202,6 +2134,15 @@ color: #EE3643;
   display: none;
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .login-email-icon,
 .login-name-icon {
   height: 38px;
@@ -2221,11 +2162,6 @@ color: #EE3643;
   color: #000000;
 }
 
-/* .modal,
-.modal-catalog,
-.modal-map {
-  position: fixed;
-} */
 
 .feedback-modal-wrapper {
   display: flex;
@@ -2349,20 +2285,87 @@ color: #EE3643;
   justify-content: space-between;
 }
 
-.site-wrapper {
-  min-width: 620px;
-  height: 266px;
-  background-color: rgba(0, 0, 0, 0.0001);
-  background-image: url("img/men-with-a-perforator.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
+/* слайдер с главной странице  начало*/
+
+.catalog-divide-perf {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  align-items: center;
+  width: 620px;
+  margin: 0 auto;
+  position: relative;
+  grid-row: 2/4;
+  grid-column: 1/3;
 
 }
 
-.slider {
+.slider-label-list {
+position: absolute;
+bottom: 36px;
+left: calc(50% - 15px);
+height: 10px;
+width: 30px;
+cursor: pointer;
 
-  text-align: center;
-  color: #ffffff;
+}
+
+.drill-slide-label::before {
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  width:10px;
+  height: 10px;
+  left: 0;
+  cursor: pointer;
+}
+
+.drill-slide-label::after {
+  position: absolute;
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  width:6px;
+  height: 6px;
+  left: 2px;
+  bottom: 2px;
+  cursor: pointer;
+}
+
+.perf-slide-label::before {
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  width:10px;
+  height: 10px;
+  right: 0;
+  cursor: pointer;
+}
+
+.perf-slide-label::after {
+  position: absolute;
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  width:6px;
+  height: 6px;
+  right: 2px;
+  bottom: 2px;
+  cursor: pointer;
+}
+
+.drill-slide-radio:checked~ .slider-label-list .perf-slide-label::after{
+  display: none;
+}
+
+.perf-slide-radio:checked~ .slider-label-list .drill-slide-label::after{
+  display: none;
+}
+
+.slider-list .red-button {
+  margin-top: 113px;
 }
 
 .slider-list {
@@ -2382,7 +2385,7 @@ color: #EE3643;
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  color: black;
+  color: white;
   margin: 0;
 }
 
@@ -2392,12 +2395,31 @@ color: #EE3643;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  color: black;
+  color: white;
   margin: 0;
   padding-top: 5px;
   text-transform: unset;
 
 }
+
+.slider-perf{
+background-image: url("img/men-with-a-perforator.jpg");
+background-repeat: no-repeat;
+width: 620px;
+height: 266px;
+padding-left: 23px;
+padding-top: 24px;
+}
+
+.slider-drill{
+background-image: url("img/men-with-a-drill.jpg");
+background-repeat: no-repeat;
+width: 620px;
+height: 266px;
+padding-left: 23px;
+padding-top: 24px;
+  }
+
 
 .perf-slide-radio:checked~ .slider-list .slider-drill{
   display: none;
@@ -2413,6 +2435,8 @@ color: #EE3643;
   display: none;
 }
 
+
+
 .perf-slide-radio,
 .drill-slide-radio {
   visibility: hidden;
@@ -2425,53 +2449,24 @@ background-image: url("img/arrow-left.png") ;
 height: 39px;
 width: 21px;
 position: absolute;
+left: -270px;
+bottom: 68px;
+cursor: pointer;
 }
 
-.slider-controls {
+.drill-slide-label-arrow::after {
+  content: "";
+  background-image: url("img/arrow-right.png") ;
+  height: 39px;
+  width: 21px;
   position: absolute;
-  bottom: 36px;
-  left: 295px;
-  z-index: 20;
-  display: flex;
-  width: 30px;
-  justify-content: space-between;
-  background-color: transparent;
+  right: -270px;
+  bottom: 68px;
   cursor: pointer;
-}
+  }
 
 
-.slider-controls button {
-  padding: 0;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
-  background: white;
-}
-
-.slide {
-  display: none;
-  padding: 23px 24px;
-}
-
-.slide-current {
-  display: block;
-}
-
-.slider-controls .current {
-  background-color: #EE3643;
-
-}
-
-.site-wrapper-2 {
-  background-color: #8996a6;
-  min-width: 620px;
-  height: 266px;
-  background-image: url("img/men-with-a-perforator.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-}
+/* слайдер с главной странице конец */
 
 .basket-buy-icon {
   position: absolute;
@@ -2689,4 +2684,46 @@ border-radius: 3px;
 .highest-panel-logo:focus {
   background: #BA2732;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
