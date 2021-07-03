@@ -14,7 +14,7 @@ try {
   isStorageSupport = false;
 }
 
-getlostLink.addEventListener("click", function () {
+getlostLink.addEventListener("click", function (evt) {
  evt.preventDefault();
  getlostPopup.classList.add("modal-show");
 

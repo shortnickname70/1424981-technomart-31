@@ -18,7 +18,7 @@
   --light-orange-for-headers-in-footer: #FFD180;
   --light-orange-catalog: #F7F3EC;
   --beige: #E5E5E5;
-  --linear-gradient: (0deg, #212A3A, #212A3A);
+  --linear-gradient: 0deg, #212A3A, #212A3A;
   --header-button-background: rgba(0, 0, 0, 0.0001);
 }
 
@@ -187,11 +187,11 @@ h1 {
 
 .bookmark-icon {
   left: 9px;
-  top: 4px;
+  top: 12px;
 }
 
 .basket-icon {
-  top: 4px;
+  top: 12px;
   left: 12px;
 }
 
@@ -213,7 +213,7 @@ h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 40px;
   color: var(--basic-white);
   justify-content: space-around;
   vertical-align: middle;
@@ -225,6 +225,7 @@ h1 {
 .header-link {
   color: white;
 }
+
 .person-fields-wrapper {
   height: 42px;
 }
@@ -242,6 +243,24 @@ h1 {
 .person-fields-wrapper:focus ul li .header-link{
    color: rgba(255, 255, 255, 0.5) ; 
 }
+
+.person-fields-wrapper-basket {
+  height: 42px;
+  background-color: #EE3643; 
+}
+
+.person-fields-wrapper-basket:hover svg{
+  opacity: 1;
+ }
+ 
+ .person-fields-wrapper-basket:focus {
+   color: rgba(255, 255, 255, 0.5) ;
+   opacity: 0.3;
+ }
+ 
+ .person-fields-wrapper-basket:focus ul li .header-link{
+    color: rgba(255, 255, 255, 0.5) ; 
+  }
 
 .highest-panel-buy-button {
   width: 150px;
@@ -361,6 +380,8 @@ h1 {
 position: absolute;
 left: 90px;
 top: 6px;
+padding-left: 10px;
+padding-right: 10px;
 
 }
 
@@ -377,10 +398,7 @@ top: 6px;
 
 }
 
-.person-area-list-point {
-  padding-left: 10px;
-  padding-right: 10px;
-}
+
 
 .header-logined {
   width: 300px;
@@ -625,15 +643,20 @@ height: 100%;
 
 .icon-right-small-first {
   left: 30px;
+  top: 23px;
 }
 
 .icon-right-small-second {
   left: 125px;
+  top: 23px;
 }
 
 .icon-right-small-third {
   left: 245px;
+  top: 23px;
 }
+
+
 
 
 .filter-row {
@@ -779,7 +802,9 @@ border-bottom: none;
 }
 
 .filter-manufacturer-list ul label {
-padding-left: 18px;
+  padding-left: 36px;
+  z-index: 10;
+  position: relative;
 }
 
 .filter-manufacturer-list ul li {
@@ -858,6 +883,7 @@ input[type="checkbox"] {
 .filter-manufacturer-item{
 position: relative;
 }
+
 .filter-checkbox-label {
   cursor: pointer;
 }
@@ -868,9 +894,14 @@ position: relative;
   left: 0px;
 }
 
-.chekbox-off-icon:hover path{
+.filter-checkbox-label:hover ~ svg path{
 fill:#B5B5B5 ;
 }
+
+.filter-checkbox-label:focus ~ svg path{
+  fill:#B5B5B5 ;
+  opacity: 0.5;
+  }
 
 .chekbox-on-icon{
   position: absolute;
@@ -879,12 +910,9 @@ fill:#B5B5B5 ;
   left: 0px;
  }
 
- .chekbox-on-icon:hover path{
-  fill:#B5B5B5 ;
-  }
-
 .filter-checkbox-input {
   visibility: hidden;
+  position: absolute;
 }
 
 .filter-checkbox-input:checked ~ .chekbox-on-icon {
@@ -912,23 +940,41 @@ visibility: hidden;
   bottom: 18px;
  }
 
- .radio-off-icon:hover path {
+ /* .radio-off-icon:hover path {
   fill:#B5B5B5 ;
-  }
+  } */
 
 
  .filter-radio-input {
   visibility: hidden;
+  position: absolute;
  }
 
  .filter-radio-label {
-   padding-left: 20px;
-   cursor: pointer;
+  padding-left: 40px;
+  z-index: 10;
+  position: relative;
+  cursor: pointer;
  }
 
  .filter-radio-input:checked ~ .radio-on-icon {
   visibility: visible;
 } 
+
+.filter-radio-label:hover ~ svg path{
+  fill:#B5B5B5 ;
+  }
+  
+  .filter-radio-input:disabled ~ svg path{
+    fill:#B5B5B5 ;
+    opacity: 0.5;
+    }
+
+    .filter-radio-input:disabled ~ .filter-radio-label {
+      fill:#B5B5B5 ;
+      opacity: 0.5;
+      }
+
 
 
 .heading-perf-row {
@@ -1745,7 +1791,7 @@ select {
   padding-bottom: 70px;
 }
 
-.modal-map {
+.map {
   width: 300px;
   height: 158px;
   padding-bottom: 22px;
@@ -1753,6 +1799,46 @@ select {
 
 .modal-map iframe {
   border: none;
+}
+
+.map-modal-wrapper {
+display: none;
+}
+
+.map-modal {
+  position: fixed;
+  width: 943px;
+  height: 450px;
+   display: block; 
+  /* border-top: 7px solid #EE3643; */
+  left: calc(50% - 468px);
+  top: calc(50% - 225px);
+  z-index: 11;
+}
+
+.map-modal::after {
+  content: "";
+  width: 946px;
+  height: 7px;
+  background-color: #EE3643;
+  top: -5px;
+  left: 0;
+  position: absolute;
+
+}
+
+
+.map-modal-close-button {
+  background: transparent;
+  position: absolute;
+  right: 11px;
+  top: 21px;
+  border: none;
+  cursor: pointer;
+}
+
+.map-modal-show {
+  display: block;
 }
 
 .about-company .text-information {
@@ -2162,18 +2248,22 @@ color: #EE3643;
   justify-content: space-between;
   border-top: solid 7px #EE3643;
   margin: 0 auto;
-  position: absolute;
+  position: fixed;
   padding: 46px 80px 37px 80px;
   box-sizing: border-box;
   background: #FFFFFF;
-  bottom: 352px;
-  left: 282px;
+  z-index: 1;
+  bottom: calc(50% - 215px);
+  left: calc(50% - 310px);
+}
+
+.modal {
   display: none;
 }
 
 .modal-show {
   display: block;
-  animation: bounce 0.6s;
+  /* animation: bounce 0.6s; */
 }
 
 .modal-error {
