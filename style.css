@@ -2263,7 +2263,7 @@ color: #EE3643;
 
 .modal-show {
   display: block;
-  /* animation: bounce 0.6s; */
+
 }
 
 .modal-error {
@@ -2813,7 +2813,6 @@ border-radius: 3px;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
-/* Animations */
 
 @keyframes bounce {
   0% {
