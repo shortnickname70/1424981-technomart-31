@@ -2115,6 +2115,7 @@ display: flex;
 align-items: center;
 color: #FFD180;
 list-style: none;
+margin: 0;
 }
 
 .footer-address-and-catalog-row {
@@ -2123,7 +2124,7 @@ list-style: none;
   margin-top: 22px;
 
 }
-.footer-address-and-catalog-row a {
+.phone-color {
   color: #F3F7F9;
 }
 
