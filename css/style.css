@@ -1944,10 +1944,6 @@ position: relative;
   cursor: pointer;
 }
 
-.footer-panel-logo:hover {
-
-}
-
 .footer-panel-logo:focus {
   background: #BA2732;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
@@ -2544,7 +2540,7 @@ cursor: pointer;
 }
 
 .slider-perf{
-background-image: url("img/men-with-a-perforator.jpg");
+  background-image: url("img/men-with-a-perforator.jpg");
 background-repeat: no-repeat;
 width: 620px;
 height: 266px;
