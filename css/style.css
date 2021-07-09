@@ -20,13 +20,15 @@
   --beige: #E5E5E5;
   --linear-gradient: 0deg, #212A3A, #212A3A;
   --header-button-background: rgba(0, 0, 0, 0.0001);
+  --light-beige: #F9F5F0;
+  --grey-background:#B7BFC8;
 }
 
 body {
   margin: 0;
   padding: 0;
   position: relative;
-  font-family: Cuprum, sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -183,8 +185,6 @@ h1 {
    
   }
  
-
-
 .bookmark-icon {
   left: 9px;
   top: 12px;
@@ -240,7 +240,7 @@ h1 {
   opacity: 0.3;
 }
 
-.person-fields-wrapper:focus ul li .header-link{
+.person-fields-wrapper:focus .header-link{
    color: rgba(255, 255, 255, 0.5) ; 
 }
 
@@ -258,7 +258,7 @@ h1 {
    opacity: 0.3;
  }
  
- .person-fields-wrapper-basket:focus ul li .header-link{
+ .person-fields-wrapper-basket:focus .header-link{
     color: rgba(255, 255, 255, 0.5) ; 
   }
 
@@ -403,7 +403,7 @@ padding-right: 10px;
 .header-logined {
   width: 300px;
   min-height: 45px;
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
@@ -428,7 +428,8 @@ padding-right: 10px;
 }
 
 .logout-icon {
-  right: 15px;
+  right: 65px;
+  top: 104px;
 }
 
 /* 
@@ -470,6 +471,18 @@ padding-right: 10px;
   color: #C5C5C5;
 }
 
+
+.header-logout:hover path {
+  fill: #3D546F;
+}
+
+.header-logout:focus path {
+  fill: #C5C5C5;
+}
+
+.header-logout:focus  {
+  color: #C5C5C5;
+}
 
 
 .header-person-blocks {
@@ -613,7 +626,7 @@ height: 100%;
   box-sizing: border-box;
   list-style: none;
   height: 59px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Cuprum", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -633,7 +646,7 @@ height: 100%;
   padding-right: 41px;
 }
 
-.bread-crumbs-row li a {
+.bread-crumbs-link {
   color: black;
 }
 
@@ -647,17 +660,14 @@ height: 100%;
 }
 
 .icon-right-small-second {
-  left: 125px;
+  left: 116px;
   top: 23px;
 }
 
 .icon-right-small-third {
-  left: 245px;
+  left: 224px;
   top: 23px;
 }
-
-
-
 
 .filter-row {
   max-width: 940px;
@@ -801,27 +811,27 @@ border-bottom: none;
   padding: 0;
 }
 
-.filter-manufacturer-list ul label {
+.filter-checkbox-label {
   padding-left: 36px;
   z-index: 10;
   position: relative;
 }
 
-.filter-manufacturer-list ul li {
+.filter-manufacturer-item {
   padding-bottom: 20px;
 }
 
-.filter-manufacturer-list ul li:first-child {
-  padding-top: 17px;
+.filter-manufacturer {
+  margin-bottom: 17px;
 }
 
-.filter-power-list ul li {
+.filter-power-item {
   padding-bottom: 22px;
 }
 
-.filter-power-list ul li:first-child {
-  padding-top: 23px;
-}
+.filter-power {
+  margin-bottom: 23px;
+} 
 
 input[type="checkbox"] {
   background-color: red;
@@ -844,8 +854,7 @@ input[type="checkbox"] {
   height: 38px;
   background: #FFFFFF;
   border: 1px solid #E5E5E5;
-  box-sizing: border-box;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -867,7 +876,7 @@ input[type="checkbox"] {
   margin-top: 14px;
 }
 
-#bosch,
+/* #bosch,
 #interscol,
 #hitachi,
 #dewalt,
@@ -878,7 +887,7 @@ input[type="checkbox"] {
   line-height: 19px;
   text-transform: uppercase;
   color: #000000;
- }
+ } */
 
 .filter-manufacturer-item{
 position: relative;
@@ -974,6 +983,17 @@ visibility: hidden;
       fill:#B5B5B5 ;
       opacity: 0.5;
       }
+
+
+         .filter-checkbox-input:disabled ~ svg path{
+          fill:#B5B5B5 ;
+          opacity: 0.5;
+          }
+    
+        .filter-checkbox-input:disabled ~ .filter-checkbox-label {
+          fill:#B5B5B5 ;
+          opacity: 0.5;
+          }
 
 
 
@@ -1323,12 +1343,12 @@ del {
   background-color: transparent;
 }
 
-.popular-manufacturer-list li a{ 
+/* .popular-manufacturer-list li a{ 
   width: 100%;
   height: 100%;
   display: block;
 
-}
+} */
 
 .footer-logo-and-navigation-row a:hover {
   text-decoration: underline;
@@ -1733,24 +1753,6 @@ h2.heading {
   display: block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 option {
   font-weight: bold;
   font-size: 21px;
@@ -1762,7 +1764,7 @@ option {
 
 }
 
-select {
+/* select {
   margin-right: 80px;
   font-size: 21px;
   line-height: 30px;
@@ -1774,7 +1776,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
+} */
 
 .delivery-company li {
   font-size: 18px;
@@ -1809,8 +1811,7 @@ display: none;
   position: fixed;
   width: 943px;
   height: 450px;
-   display: block; 
-  /* border-top: 7px solid #EE3643; */
+  display: block; 
   left: calc(50% - 468px);
   top: calc(50% - 225px);
   z-index: 11;
@@ -1826,7 +1827,6 @@ display: none;
   position: absolute;
 
 }
-
 
 .map-modal-close-button {
   background: transparent;
@@ -1851,7 +1851,7 @@ display: none;
 }
 
 .heading-black {
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -2023,7 +2023,6 @@ position: relative;
 .social-button {
   width: 44px;
   height: 44px;
-  /* background-color: linear-gradient(0deg, #212A3A, #212A3A); */
   color: inherit;
   display: flex;
   align-items: center;
@@ -2087,11 +2086,9 @@ color: #EE3643;
 color: #EE3643;
 }
 
-
 .footer-address {
   font-size: 18px;
   line-height: 24px;
-  /* display: flex; */
   align-items: center;
   color: #F3F7F9;
   padding: 0;
@@ -2120,7 +2117,7 @@ margin: 0;
   margin-top: 22px;
 
 }
-.phone-color {
+.footer-address a {
   color: #F3F7F9;
 }
 
@@ -2132,8 +2129,6 @@ margin: 0;
   text-align: center;
   color: #32425C;
 }
-
-
 
 .pagination-list {
   display: flex;
@@ -2190,8 +2185,6 @@ margin: 0;
 
 }
 
-
-
 .perforators-information-wrapper {
   width: 100%;
   background-color: #F1F5F7;
@@ -2205,8 +2198,6 @@ margin: 0;
   margin-bottom: 25px;
   color: #000000;
 }
-
-
 
 
 .products-image {
@@ -2336,7 +2327,7 @@ margin: 0;
 }
 
 .filter-item legend {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -2514,7 +2505,7 @@ cursor: pointer;
 .slide-title {
   width: 124px;
   height: 36px;
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -2527,7 +2518,7 @@ cursor: pointer;
 }
 
 .slide-title-description {
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -2540,7 +2531,7 @@ cursor: pointer;
 }
 
 .slider-perf{
-  background-image: url("img/men-with-a-perforator.jpg");
+background-image: url("img/men-with-a-perf.jpg");
 background-repeat: no-repeat;
 width: 620px;
 height: 266px;
@@ -2717,12 +2708,13 @@ border-radius: 3px;
   left: 306px;
   top: 655px;
   display: none;
+  z-index: 15;
 }
 
 .item-in-cart-description {
   width: 620px;
   min-height: 170px;
-  font-family: Cuprum, sans-serif;
+  font-family: "Cuprum", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -2763,7 +2755,7 @@ border-radius: 3px;
 .continue-shopping-button {
   width: 192px;
   height: 38px;
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
