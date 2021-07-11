@@ -186,8 +186,8 @@ h1 {
   }
  
 .bookmark-icon {
-  left: 9px;
-  top: 12px;
+  left: 20px;
+  top: 13px;
 }
 
 .basket-icon {
@@ -395,13 +395,14 @@ padding-right: 10px;
   align-items: center;
   display: flex;
   flex-direction: column;
+  position: relative;
 
 }
 
 
 
 .header-logined {
-  width: 300px;
+  min-width: 300px;
   min-height: 45px;
   font-family: "Cuprum";
   font-style: normal;
@@ -428,18 +429,9 @@ padding-right: 10px;
 }
 
 .logout-icon {
-  right: 65px;
-  top: 104px;
+  right: 19px;
+  top: 16px;
 }
-
-/* 
-.person-area-list:hover a{
-  color:#EE3643;
-}
-
-.person-area-list:focus a {
-  color:#C5C5C5;
-} */
 
 .person-area-my-orders:hover {
   color:#EE3643;
@@ -660,12 +652,12 @@ height: 100%;
 }
 
 .icon-right-small-second {
-  left: 116px;
+  left: 122px;
   top: 23px;
 }
 
 .icon-right-small-third {
-  left: 224px;
+  left: 243px;
   top: 23px;
 }
 
@@ -691,21 +683,43 @@ height: 100%;
   padding-left: 18px;
 
 }
+.sorting-row {
+   background: #F7F3EC;
+}
 
 .filter-value-list {
   display: flex;
-  background: #F7F3EC;
-  width: 700px;
+ 
+  /* width: 630px; */
   height: 38px;
   margin: 0;
   padding: 0;
   list-style: none;
+  justify-content: space-between;
 
 }
 
 .filter-value {
   padding-top: 10px;
 }
+.filter-arrows {
+  list-style: none;
+    display: flex;
+    background: #F7F3EC;
+    height: 38px;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    min-width: 105px;
+}
+
+.arrow-up {
+  padding-right: 21px;
+}
+.arrow-down {
+  padding-right: 14px;
+}
+
 
 .sorting {
   padding-left: 18px;
@@ -725,9 +739,10 @@ height: 100%;
   border-bottom: dotted 2px red;
 }
 
-.filter-button-price {
+/* .filter-button-price {
   margin-left: 140px;
-}
+} */
+
 .filter-button-price:hover {
    opacity: 1;
   color: rgba(0, 0, 0, 1);
@@ -739,9 +754,9 @@ color: #EE3643;
 border-bottom: none;
 }
 
-.filter-button-type{
+/* .filter-button-type{
   margin-left: 70px;
-}
+} */
 .filter-button-type:hover{
   opacity: 1;
   color: rgba(0, 0, 0, 1);
@@ -753,9 +768,9 @@ color: #EE3643;
 border-bottom: none;
 }
 
-.filter-button-function{
+/* .filter-button-function{
   margin-left: 65px;
-}
+} */
 .filter-button-function:hover{
   opacity: 1;
   color: rgba(0, 0, 0, 1);
@@ -768,7 +783,7 @@ border-bottom: none;
 }
 
 .up-direction {
-  margin-left: 46px;
+  /* margin-left: 46px; */
   cursor: pointer;
 }
 .up-direction:hover path {
@@ -779,7 +794,7 @@ border-bottom: none;
 }
 
 .down-direction {
-  margin-left: 21px;
+  /* margin-left: 21px; */
   cursor: pointer;
 }
 .down-direction:hover path {
@@ -815,10 +830,13 @@ border-bottom: none;
   padding-left: 36px;
   z-index: 10;
   position: relative;
+  cursor: pointer;
 }
 
 .filter-manufacturer-item {
   padding-bottom: 20px;
+  position: relative;
+
 }
 
 .filter-manufacturer {
@@ -874,27 +892,6 @@ input[type="checkbox"] {
 .filter-heading-range {
   margin-bottom: 11px;
   margin-top: 14px;
-}
-
-/* #bosch,
-#interscol,
-#hitachi,
-#dewalt,
-#makita,
-#filter-rechargeable,
-#filter-mains-supply {
-  font-size: 15px;
-  line-height: 19px;
-  text-transform: uppercase;
-  color: #000000;
- } */
-
-.filter-manufacturer-item{
-position: relative;
-}
-
-.filter-checkbox-label {
-  cursor: pointer;
 }
 
 .chekbox-off-icon{
@@ -1040,7 +1037,7 @@ visibility: hidden;
 
 .main-catalog-list-products:nth-child(even)::before {
   content: "";
-  background-image: url("img/red-tape-new.png");
+  background-image: url("../img/red-tape-new.png");
   background-repeat: no-repeat;
   color: #EE3643;
   height: 70px;
@@ -1050,13 +1047,10 @@ visibility: hidden;
   right: 0px;
 }
 
-.main-catalog-list-products .h5 {
+.main-catalog-list-products h5 {
   min-height: 43px;
   min-width: 185px;
-  margin-left: 17px;
-  margin-right: 17px;
-  margin-bottom: 7px;
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1065,16 +1059,22 @@ visibility: hidden;
   align-items: center;
   text-align: center;
   color: #000000;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 h5 {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
   margin: 0;
+  padding-left: 17px;
+  padding-right: 17px;
+  min-height: 43px;
+  min-width: 185px;
 }
 
 .BOSCH-BFG-9000 {
@@ -1123,7 +1123,7 @@ del {
 }
 
 .main-catalog-button {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -1142,6 +1142,7 @@ del {
   cursor: pointer;
   position: relative;
   padding-left: 32px;
+  margin-left: 10px;
 }
 
 .main-catalog-button::after {
@@ -1208,7 +1209,7 @@ del {
 
 .materials::before {
   content: "";
-  background-image: url("img/icon-paint-bucket.png");
+  background-image: url("../img/icon-paint-bucket.png");
   background-repeat: no-repeat;
   color: #EE3643;
   height: 65px;
@@ -1220,7 +1221,7 @@ del {
 
 .materials::after {
   content: "";
-  background-image: url("img/red-tape-new.png");
+  background-image: url("../img/red-tape-new.png");
   background-repeat: no-repeat;
   color: #EE3643;
   height: 70px;
@@ -1238,7 +1239,7 @@ del {
 
 .instrument::before {
   content: "";
-  background-image: url("img/icon-perforator.png");
+  background-image: url("../img/icon-perforator.png");
   background-repeat: no-repeat;
   color: #EE3643;
   height: 61px;
@@ -1257,7 +1258,7 @@ del {
 
 .techniks::before {
   content: "";
-  background-image: url("img/icon-tractor.png");
+  background-image: url("../img/icon-tractor.png");
   background-repeat: no-repeat;
   color: #EE3643;
   height: 62px;
@@ -1275,7 +1276,7 @@ del {
 
 .sales::before {
   content: "";
-  background-image: url("img/icon-cart.png");
+  background-image: url("../img/icon-cart.png");
   background-repeat: no-repeat;
   color: #EE3643;
   height: 72px;
@@ -1293,7 +1294,7 @@ del {
 
 .delivery-divide::before {
   content: "";
-  background-image: url("img/icon-delivery.png");
+  background-image: url("../img/icon-delivery.png");
   background-repeat: no-repeat;
   color: #EE3643;
   height: 63px;
@@ -1502,7 +1503,7 @@ h2.heading {
 
 .catalog-list-products:nth-child(3n)::before {
   content: "";
-  background-image: url("img/red-tape-new.png");
+  background-image: url("../img/red-tape-new.png");
   background-repeat: no-repeat;
   color: #EE3643;
   height: 70px;
@@ -1514,7 +1515,7 @@ h2.heading {
 
 .catalog-list-products:nth-child(4)::before {
   content: "";
-  background-image: url("img/red-tape-new.png");
+  background-image: url("../img/red-tape-new.png");
   background-repeat: no-repeat;
   color: #EE3643;
   height: 70px;
@@ -1526,7 +1527,7 @@ h2.heading {
 
 .catalog-list-products:nth-child(7)::before {
   content: "";
-  background-image: url("img/red-tape-new.png");
+  background-image: url("../img/red-tape-new.png");
   background-repeat: no-repeat;
   color: #EE3643;
   height: 70px;
@@ -1624,7 +1625,7 @@ h2.heading {
 
 .featers-list::after {
   content: "";
-  background-image: url("img/features-shadow.png");
+  background-image: url("../img/features-shadow.png");
   background-repeat: no-repeat;
   height: 279px;
   width: 10px;
@@ -1712,7 +1713,7 @@ h2.heading {
 .garantie-right-field {
   padding-left: 80px;
   padding-right: 340px;
-  background-image: url("img/delivery-truck.png");
+  background-image: url("../img/delivery-truck.png");
   background-position: right top 20px;
   background-repeat: no-repeat;
   min-height: 260px;
@@ -1896,6 +1897,7 @@ position: relative;
   align-items: center;
   justify-content: flex-start;
   color: #FFFFFF;
+  min-height: 192px;
 
 }
 
@@ -1949,19 +1951,6 @@ position: relative;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
-
-.footer-catalog-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  padding-top: 37px;
-  list-style: none;
-}
-
 .footer-catalog-navigation-element {
   font-size: 18px;
   line-height: 24px;
@@ -1998,7 +1987,7 @@ position: relative;
 }
 
 .footer-copyright {
-  max-width: 226px;
+  min-width: 226px;
   padding: 0;
   margin-right: 162px;
   font-family: Cuprum;
@@ -2015,7 +2004,6 @@ position: relative;
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  max-width: 134px;
   margin: 0;
   padding: 0;
 }
@@ -2093,7 +2081,6 @@ color: #EE3643;
   color: #F3F7F9;
   padding: 0;
   margin-right: 80px;
-  margin-bottom: 54px;
 }
 
 .footer-catalog-navigation {
@@ -2104,8 +2091,6 @@ align-content: baseline;
 padding: 0;
 font-size: 18px;
 line-height: 24px;
-display: flex;
-align-items: center;
 color: #FFD180;
 list-style: none;
 margin: 0;
@@ -2531,7 +2516,7 @@ cursor: pointer;
 }
 
 .slider-perf{
-background-image: url("img/men-with-a-perf.jpg");
+background-image: url("../img/men-with-a-perf.jpg");
 background-repeat: no-repeat;
 width: 620px;
 height: 266px;
@@ -2541,7 +2526,7 @@ box-sizing: border-box;
 }
 
 .slider-drill{
-background-image: url("img/men-with-a-drill.jpg");
+background-image: url("../img/men-with-a-drill.jpg");
 background-repeat: no-repeat;
 width: 620px;
 height: 266px;
@@ -2574,7 +2559,7 @@ padding-top: 24px;
 
 .perf-slide-label-arrow::after {
 content: "";
-background-image: url("img/arrow-left.png") ;
+background-image: url("../img/arrow-left.png") ;
 height: 39px;
 width: 21px;
 position: absolute;
@@ -2585,7 +2570,7 @@ cursor: pointer;
 
 .drill-slide-label-arrow::after {
   content: "";
-  background-image: url("img/arrow-right.png") ;
+  background-image: url("../img/arrow-right.png") ;
   height: 39px;
   width: 21px;
   position: absolute;
