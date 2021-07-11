@@ -151,10 +151,10 @@
             aria-label="check-a-slide">
 
             <div class="slider-label-list">
-              <label for="drill-slide" class="drill-slide-label"></label>
-              <label for="drill-slide" class="drill-slide-label-arrow" aria-label="slide"></label>
-              <label for="perf-slide" class="perf-slide-label"></label>
-              <label for="perf-slide" class="perf-slide-label-arrow" aria-label="slide"></label>
+              <label for="drill-slide" class="drill-slide-label"  tabindex="1"></label>
+              <label for="drill-slide" class="drill-slide-label-arrow" aria-label="slide" tabindex="1"></label>
+              <label for="perf-slide" class="perf-slide-label"  tabindex="1"></label>
+              <label for="perf-slide" class="perf-slide-label-arrow" aria-label="slide" tabindex="1"></label>
             </div>
 
             <ul class="slider-list">
@@ -365,7 +365,10 @@
 
           <div class="featers">
             <div class="features-inputs-block">
-              <input type="radio" id="feature-delivery" value="feature-delivery-value" name="feature-item"
+              <input type="radio" 
+              id="feature-delivery"
+              value="feature-delivery-value" 
+              name="feature-item"
                 class="feature-delivery-radio" checked>
               <input type="radio" id="feature-garantie" value="feature-garantie-value" name="feature-item"
                 class="feature-garantie-radio">
@@ -375,13 +378,13 @@
 
               <ul class="featers-list">
                 <li class="featers-list-item">
-                  <label for="feature-delivery" class="feature-delivery-label">Доставка</label>
+                  <label for="feature-delivery" class="feature-delivery-label" tabindex="1">Доставка</label>
                 </li>
                 <li class="featers-list-item">
-                  <label for="feature-garantie" class="feature-garantie-label">Гарантия</label>
+                  <label for="feature-garantie" class="feature-garantie-label" tabindex="1">Гарантия</label>
                 </li>
                 <li class="featers-list-item">
-                  <label for="feature-credit" class="feature-credit-label">Кредит</label>
+                  <label for="feature-credit" class="feature-credit-label" tabindex="1">Кредит</label>
                 </li>
               </ul>
 
