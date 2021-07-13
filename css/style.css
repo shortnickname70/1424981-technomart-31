@@ -2559,34 +2559,12 @@ padding-bottom: 7px;
   border-radius: 50%;
   width: 10px;
   height: 10px;
-  left: 0;
+  right: 0;
+  top: 0;
   cursor: pointer;
 }
 
 .drill-slide-label::after {
-  position: absolute;
-  content: "";
-  background-color: red;
-  border-radius: 50%;
-  width: 6px;
-  height: 6px;
-  left: 2px;
-  bottom: 2px;
-  cursor: pointer;
-}
-
-.perf-slide-label::before {
-  position: absolute;
-  content: "";
-  background-color: white;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  right: 0;
-  cursor: pointer;
-}
-
-.perf-slide-label::after {
   position: absolute;
   content: "";
   background-color: red;
@@ -2598,15 +2576,53 @@ padding-bottom: 7px;
   cursor: pointer;
 }
 
-.drill-slide-radio:checked,
-.drill-slide-radio-arrow:checked ~ .slider-label-list .perf-slide-label::after {
+.perf-slide-label::before {
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.perf-slide-label::after {
+  position: absolute;
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  left: 2px;
+  bottom: 2px;
+  cursor: pointer;
+}
+
+.drill-slide-radio[checked=true] ~ .slider-label-list .perf-slide-label::after {
   display: none;
 }
 
-.perf-slide-radio:checked,
-.perf-slide-radio-arrow:checked ~ .slider-label-list .drill-slide-label::after {
+.perf-slide-radio[checked=true] ~ .slider-label-list .drill-slide-label::after {
   display: none;
 }
+
+.perf-slide-label:focus,
+.drill-slide-label:focus,
+.perf-slide-label-arrow:focus,
+.drill-slide-label-arrow:focus {
+  outline: none;
+}
+
+.perf-slide-label:focus::before,
+.drill-slide-label:focus::before,
+.perf-slide-label-arrow:focus::after,
+.drill-slide-label-arrow:focus::after {
+  outline: 3px black solid;
+}
+
+
 
 .slider-list .red-button {
   margin-top: 113px;
@@ -2668,30 +2684,25 @@ padding-bottom: 7px;
 }
 
 
-.perf-slide-radio:checked,
-.perf-slide-radio-arrow:checked ~.slider-list .slider-drill {
+.perf-slide-radio[checked=true] ~.slider-list .slider-drill {
   display: none;
 }
 
-.perf-slide-radio:checked,
-.perf-slide-radio-arrow:checked ~ .slider-list .slider-perf {
-  display: block;
-}
-
-.dlill-slide-radio:checked
-.dlill-slide-radio-arrow:checked ~ .slider-list .slider-drill {
-  display: block;
-}
-
-.drill-slide-radio:checked,
-.dlill-slide-radio-arrow:checked ~ .slider-list .slider-perf {
+.drill-slide-radio[checked=true] ~ .slider-list .slider-perf {
   display: none;
 }
+
+.perf-slide-radio[checked=true] ~ .slider-list .slider-perf {
+  display: block;
+}
+
+.dlill-slide-radio[checked=true] ~ .slider-list .slider-drill {
+  display: block;
+}
+
 
 .perf-slide-radio,
-.drill-slide-radio,
-.perf-slide-radio-arrow,
-.drill-slide-radio-arrow {
+.drill-slide-radio {
   visibility: hidden;
   position: absolute;
 }
@@ -2738,6 +2749,13 @@ padding-bottom: 7px;
 
 .drill-slide-radio-arrow:focus ~ .slider-label-list .drill-slide-label-arrow {
   outline: 2px solid black;
+}
+
+.slider-button {
+  width: 0;
+  height: 0;
+  border: transparent;
+  background: transparent;
 }
 
 /* слайдер с главной странице конец */

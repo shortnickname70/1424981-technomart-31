@@ -17,3 +17,4 @@ mapCloseButton.addEventListener("click", function (evt) {
     modalMap.classList.remove("map-modal-show");
  
   });
+

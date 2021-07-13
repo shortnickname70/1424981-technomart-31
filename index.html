@@ -40,30 +40,30 @@
           </form>
           <div>
             <ul class="person-fields">
-              <li class="bookmark person-fields-wrapper" tabindex="0"> 
+              <li class="bookmark person-fields-wrapper" tabindex="0">
                 <a href="blank.html">
-                <svg width="14" height="16" class="bookmark-icon"
-                  viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"
-                    fill="white" />
-                </svg>
-              </a>
+                  <svg width="14" height="16" class="bookmark-icon" viewBox="0 0 14 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"
+                      fill="white" />
+                  </svg>
+                </a>
                 <a href="blank.html" class="header-link ">Закладки: 0</a>
               </li>
-              <li class=" basket person-fields-wrapper" tabindex="0"> 
-                <a href="blank.html"> 
-                <svg width="15" height="15" class="basket-icon"
-                  viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
-                    fill="white" />
-                  <path
-                    d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
-                    fill="white" />
-                  <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
-                </svg>
-              </a>
+              <li class=" basket person-fields-wrapper" tabindex="0">
+                <a href="blank.html">
+                  <svg width="15" height="15" class="basket-icon" viewBox="0 0 15 15" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                      fill="white" />
+                    <path
+                      d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                      fill="white" />
+                    <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
+                  </svg>
+                </a>
                 <a href="blank.html" class="header-link ">Корзина: 0</a>
               </li>
             </ul>
@@ -78,8 +78,8 @@
       <div class="header-central-field">
         <div class="header-thesis">
           Интернет-магазин
-          строительных материалов 
-          <br> 
+          строительных материалов
+          <br>
           и инструментов для ремонта
         </div>
         <div class="header-phone-and-address">
@@ -146,39 +146,20 @@
 
           <div class="catalog-divide-perf">
 
-            <input type="radio" id="perf-slide" value="value" name="slide" class="perf-slide-radio" checked
-            aria-label="check-a-slide">
+            <input type="radio" id="perf-slide" value="value" name="slide" class="perf-slide-radio" checked='true'
+              aria-label="check-a-slide">
             <input type="radio" id="drill-slide" value="value" name="slide" class="drill-slide-radio"
-            aria-label="check-a-slide">
-
-            <input type="radio" id="perf-slide-arrow" value="value" name="slide-arrow" 
-            class="perf-slide-radio-arrow" aria-label="check-a-slide" checked>
-            <input type="radio" id="drill-slide-arrow" value="value" name="slide-arrow" 
-            class="drill-slide-radio-arrow" aria-label="check-a-slide">
+              aria-label="check-a-slide">
 
             <div class="slider-label-list">
-              <label for="drill-slide-arrow" class="drill-slide-label-arrow"  tabindex="1"></label>
-              <label for="drill-slide" class="drill-slide-label" aria-label="slide" tabindex="1"></label>
-              <label for="perf-slide-arrow" class="perf-slide-label-arrow"  tabindex="1"></label>
-              <label for="perf-slide" class="perf-slide-label" aria-label="slide" tabindex="1"></label>
+
+              <button type="button" class="perf-slide-label slider-button"></button>
+              <button type="button" class="drill-slide-label slider-button"></button>
+
+              <button type="button" class="drill-slide-label-arrow slider-button"></button>
+              <button type="button" class="perf-slide-label-arrow slider-button"></button>
+
             </div>
-
-            
-
-            <!-- <input type="radio" id="perf-slide" value="value" name="slide" class="perf-slide-radio" checked
-            aria-label="check-a-slide">
-            <input type="radio" id="drill-slide" value="value" name="slide" class="drill-slide-radio"
-            aria-label="check-a-slide">
-
-            <div class="slider-label-list">
-              <label for="drill-slide" class="drill-slide-label"  tabindex="1"></label>
-              <label for="drill-slide" class="drill-slide-label-arrow" aria-label="slide" tabindex="1"></label>
-              <label for="perf-slide" class="perf-slide-label"  tabindex="1"></label>
-              <label for="perf-slide" class="perf-slide-label-arrow" aria-label="slide" tabindex="1"></label>
-            </div> -->
-
-
-
 
             <ul class="slider-list">
 
@@ -218,114 +199,114 @@
           <ul class="main-catalog-list">
             <li class="main-catalog-list-products">
               <img src="img/perf-bosch-bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000"
-                  class="main-catalog-list-image list-image-1">
-                <ul class="product-modal-buy">
-                  <li>
-                    <a href="catalog.html" class="product-modal-buy-buy">
-                      <svg width="15" height="15" class="basket-buy-icon" viewBox="0 0 15 15" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
-                          fill="white" />
-                        <path
-                          d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
-                          fill="white" />
-                        <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
-                      </svg>
-                      Купить
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" class="product-modal-buy-in-bookmarks">В закладки</a>
-                  </li>
-                </ul>
-                <h5 class="BOSCH-BFG-9000">Перфоратор BOSCH BFG 9000</h5>
-             
+                class="main-catalog-list-image list-image-1">
+              <ul class="product-modal-buy">
+                <li>
+                  <a href="catalog.html" class="product-modal-buy-buy">
+                    <svg width="15" height="15" class="basket-buy-icon" viewBox="0 0 15 15" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                        fill="white" />
+                      <path
+                        d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                        fill="white" />
+                      <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
+                    </svg>
+                    Купить
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="product-modal-buy-in-bookmarks">В закладки</a>
+                </li>
+              </ul>
+              <h5 class="BOSCH-BFG-9000">Перфоратор BOSCH BFG 9000</h5>
+
 
               <p class="main-catalog-list-old-price"> <del>32 500 p.</del> </p>
               <button type="button" class="main-catalog-button">25500 p.</button>
             </li>
 
-            <li class="main-catalog-list-products"> 
-                <img src="img/perf-bosch-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"
-                  class="main-catalog-list-image list-image-2">
-                <ul class="product-modal-buy">
-                  <li>
-                    <a href="catalog.html" class="product-modal-buy-buy">
-                      <svg width="15" height="15" class="basket-buy-icon" viewBox="0 0 15 15" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
-                          fill="white" />
-                        <path
-                          d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
-                          fill="white" />
-                        <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
-                      </svg>
-                      Купить</a>
-                  </li>
-                  <li>
-                    <a href="" class="product-modal-buy-in-bookmarks">В закладки</a>
-                  </li>
-                </ul>
-                <h5 class="BOSCH-BFG-3000">Перфоратор BOSCH BFG 3000</h5>
-           
+            <li class="main-catalog-list-products">
+              <img src="img/perf-bosch-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"
+                class="main-catalog-list-image list-image-2">
+              <ul class="product-modal-buy">
+                <li>
+                  <a href="catalog.html" class="product-modal-buy-buy">
+                    <svg width="15" height="15" class="basket-buy-icon" viewBox="0 0 15 15" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                        fill="white" />
+                      <path
+                        d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                        fill="white" />
+                      <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
+                    </svg>
+                    Купить</a>
+                </li>
+                <li>
+                  <a href="" class="product-modal-buy-in-bookmarks">В закладки</a>
+                </li>
+              </ul>
+              <h5 class="BOSCH-BFG-3000">Перфоратор BOSCH BFG 3000</h5>
+
               <p class="main-catalog-list-old-price"> <del>22500 p.</del> </p>
               <button type="button" class="main-catalog-button">15500 p.</button>
             </li>
 
-            <li class="main-catalog-list-products"> 
-                <img src="img/perf-bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"
-                  class="main-catalog-list-image list-image-3" >
-                <ul class="product-modal-buy">
-                  <li>
-                    <a href="catalog.html" class="product-modal-buy-buy">
-                      <svg width="15" height="15" class="basket-buy-icon" viewBox="0 0 15 15" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
-                          fill="white" />
-                        <path
-                          d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
-                          fill="white" />
-                        <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
-                      </svg>
-                      Купить</a>
-                  </li>
-                  <li>
-                    <a href="" class="product-modal-buy-in-bookmarks">В закладки</a>
-                  </li>
-                </ul>
-                <h5 class="BOSCH-BFG-6000">Перфоратор BOSCH BFG 6000</h5>
-             
+            <li class="main-catalog-list-products">
+              <img src="img/perf-bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"
+                class="main-catalog-list-image list-image-3">
+              <ul class="product-modal-buy">
+                <li>
+                  <a href="catalog.html" class="product-modal-buy-buy">
+                    <svg width="15" height="15" class="basket-buy-icon" viewBox="0 0 15 15" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                        fill="white" />
+                      <path
+                        d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                        fill="white" />
+                      <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
+                    </svg>
+                    Купить</a>
+                </li>
+                <li>
+                  <a href="" class="product-modal-buy-in-bookmarks">В закладки</a>
+                </li>
+              </ul>
+              <h5 class="BOSCH-BFG-6000">Перфоратор BOSCH BFG 6000</h5>
+
               <p class="main-catalog-list-old-price"> <del>30500 p.</del> </p>
               <button type="button" class="main-catalog-button">25500 p.</button>
             </li>
 
             <li class="main-catalog-list-products">
               <img src="img/perf-bosch-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"
-                  class="main-catalog-list-image list-image-4">
-                <ul class="product-modal-buy">
-                  <li>
-                    <a href="catalog.html" class="product-modal-buy-buy">
-                      <svg width="15" height="15" class="basket-buy-icon" viewBox="0 0 15 15" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
-                          fill="white" />
-                        <path
-                          d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
-                          fill="white" />
-                        <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
-                      </svg>
-                      Купить</a>
-                  </li>
-                  <li>
-                    <a href="" class="product-modal-buy-in-bookmarks">В закладки</a>
-                  </li>
-                </ul>
-                <h5 class="BOSCH-BFG-2000">Перфоратор BOSCH BFG 2000</h5>
-             
+                class="main-catalog-list-image list-image-4">
+              <ul class="product-modal-buy">
+                <li>
+                  <a href="catalog.html" class="product-modal-buy-buy">
+                    <svg width="15" height="15" class="basket-buy-icon" viewBox="0 0 15 15" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                        fill="white" />
+                      <path
+                        d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                        fill="white" />
+                      <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
+                    </svg>
+                    Купить</a>
+                </li>
+                <li>
+                  <a href="" class="product-modal-buy-in-bookmarks">В закладки</a>
+                </li>
+              </ul>
+              <h5 class="BOSCH-BFG-2000">Перфоратор BOSCH BFG 2000</h5>
+
               <p class="main-catalog-list-old-price"> <del>22500 p.</del> </p>
               <button type="button" class="main-catalog-button">12500 p.</button>
             </li>
@@ -388,10 +369,7 @@
 
           <div class="featers">
             <div class="features-inputs-block">
-              <input type="radio" 
-              id="feature-delivery"
-              value="feature-delivery-value" 
-              name="feature-item"
+              <input type="radio" id="feature-delivery" value="feature-delivery-value" name="feature-item"
                 class="feature-delivery-radio" checked>
               <input type="radio" id="feature-garantie" value="feature-garantie-value" name="feature-item"
                 class="feature-garantie-radio">
@@ -469,7 +447,7 @@
             <li>ЖелДорЭкспедиция
             </li>
           </ul>
-          <a href="blank.html" class="red-button button-about-company ">Подробнее о компании</a> 
+          <a href="blank.html" class="red-button button-about-company ">Подробнее о компании</a>
         </section>
 
         <section class="contacts">
@@ -484,7 +462,7 @@
             <a href="https://goo.gl/maps/eXnMroiBcMJo9GzZ6" class="map-iframe">
               <img src="./img/map.jpg" alt="Как найти техномарт" width="300" height="158">
             </a>
-            </div>
+          </div>
           <button type="button" class="red-button get-lost">Заблудились? Напишите нам!</button>
         </section>
       </div>
@@ -517,8 +495,8 @@
           </div>
           <div class="footer-address-and-catalog-row">
             <article class="footer-address"> г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
-              <br>  
-              <a href="tel:+78005558628" >+7 800 555-86-28</a>
+              <br>
+              <a href="tel:+78005558628">+7 800 555-86-28</a>
             </article>
 
             <nav>
@@ -528,7 +506,7 @@
                 <li><a href="catalog.html" class="footer-catalog-navigation-element">Техника</a></li>
                 <li><a href="catalog.html" class="footer-catalog-navigation-element">Инструмент</a></li>
                 <li><a href="blank.html" class="footer-catalog-navigation-element">Спецпредложения</a></li>
-              
+
               </ul>
             </nav>
 
@@ -581,7 +559,8 @@
           </div>
           <div class="footer-made-by">
             <p class="footer-text">Разработано — </p>
-            <a href="https://htmlacademy.ru/intensive/htmlcss " target="_blank" class="footer-text htmlacademy-site">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss " target="_blank"
+              class="footer-text htmlacademy-site">htmlacademy.ru</a>
           </div>
         </div>
       </div>
@@ -596,17 +575,17 @@
             height="21" alt="Иконка красного крестика" class="icon-red-cross"> </button>
 
         <div class="feedback-modal-wrapper">
-          <p class= "feedback-area-text">
+          <p class="feedback-area-text">
             <label for="name-field" class="feedback-title">Ваше имя</label>
             <input class="login-name-icon" id="name-field" type="text" name="name" placeholder="Имя Фамилия">
           </p>
 
-          <p class= "feedback-area-text">
+          <p class="feedback-area-text">
             <label for="email-field" class="feedback-title">Ваш e-mail:</label>
             <input class="login-email-icon" id="email-field" type="email" name="email" placeholder="email@example.com">
           </p>
         </div>
-        <p class= "feedback-area-text">
+        <p class="feedback-area-text">
           <label for="feedback-text-field" class="feedback-title">Текст письма:</label>
           <textarea class="feedback-modal-textarea" id="feedback-text-field" name="feedback-text"
             placeholder="В свободной форме" cols="62" rows="5"></textarea>
@@ -634,6 +613,7 @@
 
   <script src="js/login-mini.js"></script>
   <script src="js/map-mini.js"></script>
+  <script src="js/slider-buttons-mini.js"></script>
 </body>
 
 </html>
