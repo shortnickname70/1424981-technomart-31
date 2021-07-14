@@ -122,7 +122,7 @@ h1 {
   color: white;
   position: absolute;
   left: 42px;
-  top: 9px;
+  top: 10px;
 
 }
 
@@ -130,7 +130,7 @@ h1 {
   margin: 0;
   width: 220px;
   display: block;
-  height: 47px;
+  height: 50px;
   background-color: #EE3643;
   position: relative;
   box-shadow: inset 0px -5px 0px rgb(0 0 0 / 24%);
@@ -187,11 +187,11 @@ h1 {
 
 .bookmark-icon {
   left: 20px;
-  top: 13px;
+  top: 11px;
 }
 
 .basket-icon {
-  top: 12px;
+  top: 10px;
   left: 24px;
 }
 
@@ -205,6 +205,7 @@ h1 {
   cursor: pointer;
   padding: 0;
   width: 301px;
+  padding-top: 6px;
 }
 
 .person-fields li {
@@ -277,7 +278,7 @@ h1 {
 
 .highest-panel-buy-button {
   width: 150px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -307,12 +308,11 @@ h1 {
   line-height: 24px;
   border: none;
   color: white;
-  letter-spacing: -1px;
   text-align: center;
   cursor: pointer;
   height: 100%;
   letter-spacing: 0.2px;
-
+    padding-top: 2px;
 }
 
 .checkout:focus {
@@ -892,7 +892,7 @@ input[type="checkbox"] {
 
 .filter-manufacturer,
 .filter-power {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans","Cuprum", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -906,7 +906,7 @@ input[type="checkbox"] {
   height: 38px;
   background: #FFFFFF;
   border: 1px solid #E5E5E5;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Cuprum", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -1014,8 +1014,8 @@ input[type="checkbox"] {
 }
 
 .filter-radio-input:disabled~.filter-radio-label {
-  fill: #B5B5B5;
-  opacity: 0.5;
+  fill: #000000;
+  opacity: 0.4;
 }
 
 
@@ -1025,8 +1025,8 @@ input[type="checkbox"] {
 }
 
 .filter-checkbox-input:disabled~.filter-checkbox-label {
-  fill: #B5B5B5;
-  opacity: 0.5;
+  fill: #000000;
+  opacity: 0.4;
 }
 
 
@@ -1684,7 +1684,7 @@ h2.heading {
 
 .servises-field {
   padding-top: 64px;
-  margin-bottom: 67px;
+  margin-bottom: 69px;
 }
 
 .featers-list {
@@ -1730,8 +1730,8 @@ h2.heading {
   line-height: 30px;
   color: #FFFFFF;
   box-sizing: border-box;
-  padding-left: 22px;
-  padding-top: 17px;
+  padding-left: 23px;
+  padding-top: 16px;
 }
 
 .feature-delivery-label:hover,
@@ -1747,6 +1747,7 @@ h2.heading {
 
 .feature-credit-label {
   box-shadow: none;
+  height: 65px;
 }
 
 .feature-delivery-radio,
@@ -1835,6 +1836,13 @@ option {
   color: white;
 }
 
+.delivery-company {
+  margin-top: 2px;
+  padding: 0;
+  padding-left: 38px;
+  margin-bottom: 15px;
+}
+
 .delivery-company li {
   font-size: 18px;
   line-height: 24px;
@@ -1919,7 +1927,7 @@ option {
 
 .real-shopping {
   padding-top: 24px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .delivery-company li {
@@ -1938,7 +1946,7 @@ option {
   width: 25px;
   height: 2px;
   background-color: #EE3643;
-  top: 6px;
+  top: 13px;
   left: -37px;
 }
 
@@ -2638,6 +2646,7 @@ padding-bottom: 7px;
 .slider-perf {
   background-image: url("../img/men-with-a-perf.jpg");
   background-repeat: no-repeat;
+  background-color: lightslategray;
   width: 620px;
   height: 266px;
   padding-left: 23px;
