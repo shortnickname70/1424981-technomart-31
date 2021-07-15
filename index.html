@@ -147,13 +147,13 @@
           <div class="catalog-divide-perf">
 
             <input type="radio" id="perf-slide" value="value" name="slide" class="perf-slide-radio" 
-            checked='true'  aria-label="check-a-slide">
+              aria-label="check-a-slide">
             <input type="radio" id="drill-slide" value="value" name="slide" class="drill-slide-radio"
               aria-label="check-a-slide">
 
             <div class="slider-label-list">
 
-              <button type="button" class="perf-slide-label slider-button" aria-label="slider-point"></button>
+              <button type="button" class="show-perf-dot perf-slide-label slider-button" aria-label="slider-point"></button>
               <button type="button" class="drill-slide-label slider-button" aria-label="slider-point"></button>
 
               <button type="button" class="drill-slide-label-arrow slider-button" aria-label="slider-arrow"></button>
@@ -163,13 +163,13 @@
 
             <ul class="slider-list">
 
-              <li class="slider-perf" aria-label="men-with-a-perf">
+              <li class="slider-perf show-slide" aria-label="men-with-a-perf">
                 <h3 class="slide-title">Перфораторы</h3>
                 <p class="slide-title-description"> Настоящие мужские игрушки </p>
                 <a href="catalog.html" class="red-button">Открыть каталог</a>
               </li>
 
-              <li class="slider-drill" aria-label="men-with-a-drill">
+              <li class="slider-drill hide-slide" aria-label="men-with-a-drill">
                 <h3 class="slide-title">Дрели</h3>
                 <p class="slide-title-description">Соседям на радость!</p>
                 <a href="catalog.html" class="red-button">Открыть каталог</a>
@@ -197,7 +197,7 @@
           </div>
 
           <ul class="main-catalog-list">
-            <li class="main-catalog-list-products">
+            <li class="main-catalog-list-products ">
               <img src="img/perf-bosch-bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000"
                 class="main-catalog-list-image list-image-1">
               <ul class="product-modal-buy">
@@ -227,7 +227,7 @@
               <button type="button" class="main-catalog-button">25500 p.</button>
             </li>
 
-            <li class="main-catalog-list-products">
+            <li class="main-catalog-list-products new-product">
               <img src="img/perf-bosch-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"
                 class="main-catalog-list-image list-image-2">
               <ul class="product-modal-buy">
@@ -283,7 +283,7 @@
               <button type="button" class="main-catalog-button">25500 p.</button>
             </li>
 
-            <li class="main-catalog-list-products">
+            <li class="main-catalog-list-products new-product">
               <img src="img/perf-bosch-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"
                 class="main-catalog-list-image list-image-4">
               <ul class="product-modal-buy">
@@ -613,7 +613,7 @@
 
   <script src="js/login-mini.js"></script>
   <script src="js/map-mini.js"></script>
-  <script src="js/slider-buttons-mini.js"></script>
+  <script src="js/slider-buttons.js"></script>
 </body>
 
 </html>

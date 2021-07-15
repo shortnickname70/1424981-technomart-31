@@ -187,11 +187,11 @@ h1 {
 
 .bookmark-icon {
   left: 20px;
-  top: 11px;
+  top: 13px;
 }
 
 .basket-icon {
-  top: 10px;
+  top: 13px;
   left: 24px;
 }
 
@@ -205,7 +205,6 @@ h1 {
   cursor: pointer;
   padding: 0;
   width: 301px;
-  padding-top: 6px;
 }
 
 .person-fields li {
@@ -416,6 +415,10 @@ h1 {
 
 }
 
+.login-name {
+  width: 186px;
+  display: block;
+}
 
 
 .header-logined {
@@ -522,7 +525,7 @@ h1 {
 
 .icon-login {
   left: 17px;
-  top: 12px;
+  top: 15px;
   position: absolute;
   background-color: transparent;
   color: #C5C5C5;
@@ -684,7 +687,7 @@ div .header-person-blocks:nth-child(1) {
 
 .filter-row {
   max-width: 940px;
-  min-height: 18px;
+  min-height: 38px;
   font-family: "PT Sans", sans-serif;;
   font-style: normal;
   font-weight: normal;
@@ -721,7 +724,6 @@ div .header-person-blocks:nth-child(1) {
 
 .filter-value-list {
   display: flex;
-  height: 18px;
   margin: 0;
   padding: 0;
   align-items: center;
@@ -1112,7 +1114,7 @@ input[type="checkbox"] {
   margin-right: 14px;
 }
 
-.main-catalog-list-products:nth-child(even)::before {
+.new-product::before {
   content: "";
   background-image: url("../img/red-tape-new.png");
   background-repeat: no-repeat;
@@ -1120,7 +1122,7 @@ input[type="checkbox"] {
   height: 70px;
   width: 70px;
   position: absolute;
-  bottom: 246px;
+  top: 0;
   right: 0px;
 }
 
@@ -1303,7 +1305,7 @@ del {
   height: 70px;
   width: 70px;
   position: absolute;
-  bottom: 53px;
+  top: 0;
   right: 0px;
 }
 
@@ -1539,7 +1541,7 @@ del {
 }
 
 h2.heading {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .popular-sales,
@@ -1553,12 +1555,12 @@ h2.heading {
   padding-top: 25px;
   padding-bottom: 24px;
   display: flex;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 
 .catalog-list-products {
   width: 220px;
-  height: 318px;
+ min-height: 318px;
   margin-right: 20px;
   margin-bottom: 18px;
   background: #FFFFFF;
@@ -1569,43 +1571,7 @@ h2.heading {
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
-}
-
-
-.catalog-list-products:nth-child(3n)::before {
-  content: "";
-  background-image: url("../img/red-tape-new.png");
-  background-repeat: no-repeat;
-  color: #EE3643;
-  height: 70px;
-  width: 70px;
-  position: absolute;
-  bottom: 246px;
-  right: 0px;
-}
-
-.catalog-list-products:nth-child(4)::before {
-  content: "";
-  background-image: url("../img/red-tape-new.png");
-  background-repeat: no-repeat;
-  color: #EE3643;
-  height: 70px;
-  width: 70px;
-  position: absolute;
-  bottom: 246px;
-  right: 0px;
-}
-
-.catalog-list-products:nth-child(7)::before {
-  content: "";
-  background-image: url("../img/red-tape-new.png");
-  background-repeat: no-repeat;
-  color: #EE3643;
-  height: 70px;
-  width: 70px;
-  position: absolute;
-  bottom: 246px;
-  right: 0px;
+  padding-bottom: 10px;
 }
 
 .catalog-list-products:nth-child(3n) {
@@ -1730,8 +1696,8 @@ h2.heading {
   line-height: 30px;
   color: #FFFFFF;
   box-sizing: border-box;
-  padding-left: 23px;
-  padding-top: 16px;
+  padding-left: 22px;
+  padding-top: 18px;
 }
 
 .feature-delivery-label:hover,
@@ -1816,8 +1782,6 @@ h2.heading {
   display: block;
 }
 
-
-
 .feature-garantie-radio:checked~.credit-right-field,
 .feature-garantie-radio:checked~.delivery-right-field {
   display: none;
@@ -1837,7 +1801,7 @@ option {
 }
 
 .delivery-company {
-  margin-top: 2px;
+  margin-top: 3px;
   padding: 0;
   padding-left: 38px;
   margin-bottom: 15px;
@@ -1854,8 +1818,8 @@ option {
   justify-content: space-between;
   height: 360px;
   align-content: center;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 68px;
+  padding-bottom: 66px;
 }
 
 .map {
@@ -2067,6 +2031,9 @@ option {
   margin: 0;
   padding: 0;
   margin-right: 32px;
+  width: 135px;
+  flex-wrap: wrap;
+  margin-top: 1px;
 }
 
 .social-button {
@@ -2093,13 +2060,13 @@ option {
 }
 
 .footer-text-copyright {
-  margin-top: 35px;
+  margin-top: 36px;
   margin-bottom: 35px;
 }
 
 .footer-feedback {
   color: white;
-  margin-top: 35px;
+  margin-top: 36px;
   cursor: pointer;
   font-family: "Cuprum", sans-serif;
 font-style: normal;
@@ -2111,7 +2078,7 @@ margin-right: -33px;
 
 .footer-made-by {
   color: white;
-  margin-top: 35px;
+  margin-top: 36px;
   margin-right: 13px;
   font-family: "Cuprum", sans-serif;
 font-style: normal;
@@ -2173,7 +2140,7 @@ line-height: 18px;
   color: #FFD180;
   list-style: none;
   margin: 0;
-  padding-top: 3px;
+  padding-top: 5px;
 }
 
 .footer-address-and-catalog-row {
@@ -2544,7 +2511,19 @@ padding-bottom: 7px;
   cursor: pointer;
 }
 
-.drill-slide-label::after {
+/* .drill-slide-label::after {
+  position: absolute;
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  right: 2px;
+  bottom: 2px;
+  cursor: pointer;
+} */
+
+.show-drill-dot::after {
   position: absolute;
   content: "";
   background-color: red;
@@ -2568,7 +2547,7 @@ padding-bottom: 7px;
   cursor: pointer;
 }
 
-.perf-slide-label::after {
+.show-perf-dot::after {
   position: absolute;
   content: "";
   background-color: red;
@@ -2580,13 +2559,35 @@ padding-bottom: 7px;
   cursor: pointer;
 }
 
-.drill-slide-radio[checked=true] ~ .slider-label-list .perf-slide-label::after {
+.show-slide {
+  display: block;
+}
+
+.hide-slide {
+  display: none;
+}
+
+/* .perf-slide-label::after {
+  position: absolute;
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  left: 2px;
+  bottom: 2px;
+  cursor: pointer;
+} */
+
+/* .drill-slide-radio[checked=true] ~ .slider-label-list .perf-slide-label::after {
   display: none;
 }
 
 .perf-slide-radio[checked=true] ~ .slider-label-list .drill-slide-label::after {
   display: none;
-}
+} */
+
+
 
 .perf-slide-label:focus,
 .drill-slide-label:focus,
@@ -3003,5 +3004,3 @@ padding-bottom: 7px;
     transform: translateX(10px);
   }
 }
-
-
