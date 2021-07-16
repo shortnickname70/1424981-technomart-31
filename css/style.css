@@ -216,10 +216,9 @@ h1 {
   line-height: 40px;
   color: var(--basic-white);
   justify-content: space-around;
-  vertical-align: middle;
   text-align: center;
   position: relative;
-
+padding-top: 2px;
 }
 
 .header-link {
@@ -1059,7 +1058,7 @@ input[type="checkbox"] {
 
 .main-catalog-list-products {
   width: 220px;
-  height: 318px;
+  min-height: 318px;
   margin-right: 20px;
   margin-bottom: 59px;
   background: #FFFFFF;
@@ -1070,27 +1069,28 @@ input[type="checkbox"] {
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 10px;
 }
 
 .list-image-1 {
   margin-top: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 .list-image-2 {
   margin-top: 27px;
   margin-right: 11px;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 }
 
  .list-image-3 {
   margin-top: 21px;
     margin-right: 11px;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
 }
 
 .list-image-4 {
   margin-top: 27px;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
   margin-right: 13px;
 } 
 
@@ -1469,7 +1469,7 @@ del {
   padding-left: 23px;
   padding-top: 20px;
   position: relative;
-
+letter-spacing: 0.5px;
 }
 
 .container {
@@ -1668,7 +1668,7 @@ h2.heading {
   height: 279px;
   width: 10px;
   position: absolute;
-  bottom: 0px;
+  bottom: 26px;
   left: 230px;
 
 }
@@ -1697,7 +1697,8 @@ h2.heading {
   color: #FFFFFF;
   box-sizing: border-box;
   padding-left: 22px;
-  padding-top: 18px;
+  padding-top: 15px;
+  letter-spacing: 0.5px;
 }
 
 .feature-delivery-label:hover,
@@ -1910,7 +1911,7 @@ option {
   width: 25px;
   height: 2px;
   background-color: #EE3643;
-  top: 13px;
+  top: 12px;
   left: -37px;
 }
 
@@ -2511,18 +2512,6 @@ padding-bottom: 7px;
   cursor: pointer;
 }
 
-/* .drill-slide-label::after {
-  position: absolute;
-  content: "";
-  background-color: red;
-  border-radius: 50%;
-  width: 6px;
-  height: 6px;
-  right: 2px;
-  bottom: 2px;
-  cursor: pointer;
-} */
-
 .show-drill-dot::after {
   position: absolute;
   content: "";
@@ -2566,28 +2555,6 @@ padding-bottom: 7px;
 .hide-slide {
   display: none;
 }
-
-/* .perf-slide-label::after {
-  position: absolute;
-  content: "";
-  background-color: red;
-  border-radius: 50%;
-  width: 6px;
-  height: 6px;
-  left: 2px;
-  bottom: 2px;
-  cursor: pointer;
-} */
-
-/* .drill-slide-radio[checked=true] ~ .slider-label-list .perf-slide-label::after {
-  display: none;
-}
-
-.perf-slide-radio[checked=true] ~ .slider-label-list .drill-slide-label::after {
-  display: none;
-} */
-
-
 
 .perf-slide-label:focus,
 .drill-slide-label:focus,
