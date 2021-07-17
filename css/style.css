@@ -1116,7 +1116,7 @@ input[type="checkbox"] {
 
 .new-product::before {
   content: "";
-  background-image: url("../img/red-tape-new.png");
+  background-image: url("../img1/red-tape-new.png");
   background-repeat: no-repeat;
   color: #EE3643;
   height: 70px;
@@ -1287,7 +1287,7 @@ del {
 
 .materials::before {
   content: "";
-  background-image: url("../img/icon-paint-bucket.png");
+  background-image: url("../img1/icon-paint-bucket.png");
   background-repeat: no-repeat;
   color: #EE3643;
   height: 65px;
@@ -1299,7 +1299,7 @@ del {
 
 .materials::after {
   content: "";
-  background-image: url("../img/red-tape-new.png");
+  background-image: url("../img1/red-tape-new.png");
   background-repeat: no-repeat;
   color: #EE3643;
   height: 70px;
@@ -1317,7 +1317,7 @@ del {
 
 .instrument::before {
   content: "";
-  background-image: url("../img/icon-perforator.png");
+  background-image: url("../img1/icon-perforator.png");
   background-repeat: no-repeat;
   color: #EE3643;
   height: 61px;
@@ -1336,7 +1336,7 @@ del {
 
 .techniks::before {
   content: "";
-  background-image: url("../img/icon-tractor.png");
+  background-image: url("../img1/icon-tractor.png");
   background-repeat: no-repeat;
   color: #EE3643;
   height: 62px;
@@ -1354,7 +1354,7 @@ del {
 
 .sales::before {
   content: "";
-  background-image: url("../img/icon-cart.png");
+  background-image: url("../img1/icon-cart.png");
   background-repeat: no-repeat;
   color: #EE3643;
   height: 72px;
@@ -1372,7 +1372,7 @@ del {
 
 .delivery-divide::before {
   content: "";
-  background-image: url("../img/icon-delivery.png");
+  background-image: url("../img1/icon-delivery.png");
   background-repeat: no-repeat;
   color: #EE3643;
   height: 63px;
@@ -1663,7 +1663,7 @@ h2.heading {
 
 .featers-list::after {
   content: "";
-  background-image: url("../img/features-shadow.png");
+  background-image: url("../img1/features-shadow.png");
   background-repeat: no-repeat;
   height: 279px;
   width: 10px;
@@ -1753,7 +1753,7 @@ h2.heading {
 .garantie-right-field {
   padding-left: 80px;
   padding-right: 340px;
-  background-image: url("../img/delivery-truck.png");
+  background-image: url("../img1/delivery-truck.png");
   background-position: right top 20px;
   background-repeat: no-repeat;
   min-height: 260px;
@@ -2612,7 +2612,7 @@ padding-bottom: 7px;
 }
 
 .slider-perf {
-  background-image: url("../img/men-with-a-perf.jpg");
+  background-image: url("../img1/men-with-a-perf.jpg");
   background-repeat: no-repeat;
   background-color: lightslategray;
   width: 620px;
@@ -2623,7 +2623,7 @@ padding-bottom: 7px;
 }
 
 .slider-drill {
-  background-image: url("../img/men-with-a-drill.jpg");
+  background-image: url("../img1/men-with-a-drill.jpg");
   background-repeat: no-repeat;
   width: 620px;
   height: 266px;
@@ -2672,7 +2672,7 @@ padding-bottom: 7px;
 
 .perf-slide-label-arrow::after {
   content: "";
-  background-image: url("../img/arrow-left.png");
+  background-image: url("../img1/arrow-left.png");
   height: 39px;
   width: 21px;
   position: absolute;
@@ -2683,7 +2683,7 @@ padding-bottom: 7px;
 
 .drill-slide-label-arrow::after {
   content: "";
-  background-image: url("../img/arrow-right.png");
+  background-image: url("../img1/arrow-right.png");
   height: 39px;
   width: 21px;
   position: absolute;
